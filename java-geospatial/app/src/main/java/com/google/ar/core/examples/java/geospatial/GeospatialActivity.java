@@ -105,10 +105,10 @@ public class GeospatialActivity extends AppCompatActivity
   private Integer clearedAnchorsAmount = null;
 
   // Default anchor localisation
-  private double latitude = 46.564341;
-  private double longitude = 6.602239;
-  private double altitude = 641.35;
-  private double headingDegree = 27.7;
+  private double latitude = 46.764503;
+  private double longitude = 6.646427;
+  private double altitude = 492;
+  private double headingDegree = 20.8;
 
   /** Timer to keep track of how much time has passed since localizing has started. */
   private long localizingStartTimestamp;
@@ -222,10 +222,6 @@ public class GeospatialActivity extends AppCompatActivity
 
     surfaceView.onResume();
     displayRotationHelper.onResume();
-
-    // Set the default anchor
-    Earth earth = session.getEarth();
-    createAnchor(earth, latitude, longitude, altitude, headingDegree);
   }
 
   private void showPrivacyNoticeDialog() {
@@ -543,6 +539,7 @@ public class GeospatialActivity extends AppCompatActivity
 
     // Compose the virtual scene with the background.
     backgroundRenderer.drawVirtualScene(render, virtualSceneFramebuffer, Z_NEAR, Z_FAR);
+
   }
 
   /** Configures the session with feature settings. */
@@ -558,6 +555,12 @@ public class GeospatialActivity extends AppCompatActivity
     session.configure(config);
     state = State.PRETRACKING;
     localizingStartTimestamp = System.currentTimeMillis();
+
+
+    // Set the default anchor
+    Earth earth = session.getEarth();
+    createAnchor(earth, latitude, longitude, altitude, headingDegree);
+    storeAnchorParameters(latitude, longitude, altitude, headingDegree);
   }
 
   /** Change behavior depending on the current {@link State} of the application. */
