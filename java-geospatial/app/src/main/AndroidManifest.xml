@@ -16,7 +16,7 @@
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.google.ar.core.examples.java.geospatial">
+    package="ch.heigvd.ar.core.examples.java.geospatial">
 
   <uses-permission android:name="android.permission.CAMERA"/>
 
@@ -41,7 +41,7 @@
       tools:ignore="GoogleAppIndexingWarning">
 
     <activity
-        android:name="com.google.ar.core.examples.java.geospatial.GeospatialActivity"
+        android:name="ch.heigvd.ar.core.examples.java.geospatial.GeospatialActivity"
         android:configChanges="orientation|screenSize"
         android:exported="true"
         android:theme="@style/Theme.AppCompat.NoActionBar"
@@ -55,6 +55,6 @@
     <meta-data android:name="com.google.ar.core" android:value="required" />
     <meta-data
         android:name="com.google.android.ar.API_KEY"
-        android:value="API_KEY"/>
+        android:value="AIzaSyDcvisJ8JI8vxSNJvLAH45cTjz9jNho0qA"/>
   </application>
 </manifest>

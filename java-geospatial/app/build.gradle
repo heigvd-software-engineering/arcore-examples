@@ -1,4 +1,7 @@
-apply plugin: 'com.android.application'
+plugins {
+    id 'com.google.protobuf' version '0.8.18'
+    id 'com.android.application'
+}
 
 android {
     compileSdkVersion 31
@@ -24,6 +27,7 @@ android {
     }
 }
 
+
 dependencies {
     // ARCore (Google Play Services for AR) library.
     implementation 'com.google.ar:core:1.31.0'
@@ -35,4 +39,31 @@ dependencies {
 
     implementation 'androidx.appcompat:appcompat:1.1.0'
     implementation 'com.google.android.material:material:1.1.0'
+
+    implementation 'io.grpc:grpc-okhttp:1.47.0'
+    implementation 'io.grpc:grpc-protobuf-lite:1.47.0'
+    implementation 'io.grpc:grpc-stub:1.47.0'
+    compileOnly 'org.apache.tomcat:annotations-api:6.0.53' // necessary for Java 9+
+}
+
+
+protobuf {
+    protoc {
+        artifact = "com.google.protobuf:protoc:3.19.2"
+    }
+    plugins {
+        grpc {
+            artifact = 'io.grpc:protoc-gen-grpc-java:1.47.0'
+        }
+    }
+    generateProtoTasks {
+        all().each { task ->
+            task.builtins {
+                java { option 'lite' }
+            }
+            task.plugins {
+                grpc { option 'lite' }
+            }
+        }
+    }
 }
