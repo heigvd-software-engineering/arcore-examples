@@ -15,6 +15,7 @@
    limitations under the License.
 -->
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_layout"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -25,6 +26,12 @@
       android:layout_width="fill_parent"
       android:layout_height="fill_parent"
       android:layout_gravity="top" />
+
+  <androidx.fragment.app.FragmentContainerView
+      android:id="@+id/arFragment"
+      android:name="com.google.ar.sceneform.ux.ArFragment"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent" />
 
   <TextView
       android:id="@+id/status_text_view"

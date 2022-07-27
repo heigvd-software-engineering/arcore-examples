@@ -84,6 +84,8 @@ public class SampleRender {
     mesh.lowLevelDraw();
   }
 
+  
+
   /**
    * Clear the given framebuffer.
    *

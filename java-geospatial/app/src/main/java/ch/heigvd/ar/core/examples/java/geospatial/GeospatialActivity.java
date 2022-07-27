@@ -19,21 +19,33 @@ package ch.heigvd.ar.core.examples.java.geospatial;
 import android.app.Activity;
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.graphics.Bitmap;
+import android.graphics.Canvas;
+import android.graphics.Paint;
+import android.graphics.drawable.Drawable;
+import android.opengl.GLES30;
 import android.opengl.GLSurfaceView;
 import android.opengl.Matrix;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
+import android.text.Layout;
 import android.text.TextUtils;
 import android.util.Log;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.DialogFragment;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentOnAttachListener;
+
 import com.google.ar.core.Anchor;
 import com.google.ar.core.ArCoreApk;
 import com.google.ar.core.Camera;
@@ -41,6 +53,8 @@ import com.google.ar.core.Config;
 import com.google.ar.core.Earth;
 import com.google.ar.core.Frame;
 import com.google.ar.core.GeospatialPose;
+import com.google.ar.core.HitResult;
+import com.google.ar.core.Plane;
 import com.google.ar.core.Session;
 import com.google.ar.core.TrackingState;
 
@@ -74,6 +88,10 @@ import com.google.ar.core.exceptions.UnavailableDeviceNotCompatibleException;
 import com.google.ar.core.exceptions.UnavailableSdkTooOldException;
 import com.google.ar.core.exceptions.UnavailableUserDeclinedInstallationException;
 import com.google.ar.core.exceptions.UnsupportedConfigurationException;
+import com.google.ar.sceneform.Sceneform;
+import com.google.ar.sceneform.rendering.ViewRenderable;
+import com.google.ar.sceneform.ux.ArFragment;
+import com.google.ar.sceneform.ux.BaseArFragment;
 
 import java.io.Closeable;
 import java.io.IOException;
@@ -97,7 +115,7 @@ import java.util.stream.Collectors;
  * and will be recreated once localized.
  */
 public class GeospatialActivity extends AppCompatActivity
-    implements SampleRender.Renderer, PrivacyNoticeDialogFragment.NoticeDialogListener {
+    implements SampleRender.Renderer, FragmentOnAttachListener, PrivacyNoticeDialogFragment.NoticeDialogListener, BaseArFragment.OnSessionConfigurationListener, BaseArFragment.OnTapArPlaneListener {
 
   private static final String TAG = GeospatialActivity.class.getSimpleName();
 
@@ -134,9 +152,13 @@ public class GeospatialActivity extends AppCompatActivity
   private double headingDegree = 20.8;
 
   private Anchor defaultAnchor;
+  private ArFragment arFragment;
+
+  private ViewRenderable viewRenderable;
 
   /** Timer to keep track of how much time has passed since localizing has started. */
   private long localizingStartTimestamp;
+
 
   enum State {
     /** The Geospatial API has not yet been initialized. */
@@ -219,6 +241,55 @@ public class GeospatialActivity extends AppCompatActivity
     installRequested = false;
     clearedAnchorsAmount = null;
 
+    // Load model.glb from assets folder or http url
+    getSupportFragmentManager().addFragmentOnAttachListener(this);
+
+    if (savedInstanceState == null) {
+      if (Sceneform.isSupported(this)) {
+        getSupportFragmentManager().beginTransaction()
+                .add(R.id.arFragment, ArFragment.class, null)
+                .commit();
+      }
+    }
+
+
+    WeakReference<GeospatialActivity> weakActivity = new WeakReference<>(this);
+    ViewRenderable.builder()
+            .setView(this, R.layout.view_text)
+            .build()
+            .thenAccept(viewRenderable -> {
+              GeospatialActivity activity = weakActivity.get();
+              if (activity != null) {
+                activity.viewRenderable = viewRenderable;
+              }
+            })
+            .exceptionally(throwable -> {
+              Toast.makeText(this, "Unable to load model", Toast.LENGTH_LONG).show();
+              return null;
+            });
+
+  }
+
+  @Override
+  public void onAttachFragment(@NonNull FragmentManager fragmentManager, @NonNull Fragment fragment) {
+    if (fragment.getId() == R.id.arFragment) {
+      arFragment = (ArFragment) fragment;
+      arFragment.setOnSessionConfigurationListener(this);
+      arFragment.setOnViewCreatedListener(this);
+      arFragment.setOnTapArPlaneListener(this);
+    }
+  }
+
+  @Override
+  public void onSessionConfiguration(Session session, Config config) {
+    if (session.isDepthModeSupported(Config.DepthMode.AUTOMATIC)) {
+      config.setDepthMode(Config.DepthMode.AUTOMATIC);
+    }
+  }
+
+  @Override
+  public void onTapPlane(HitResult hitResult, Plane plane, MotionEvent motionEvent) {
+    handleSetAnchorButton();
   }
 
   @Override
@@ -558,6 +629,7 @@ public class GeospatialActivity extends AppCompatActivity
       // during calls to session.update() as ARCore refines its estimate of the world.
       anchor.getPose().toMatrix(modelMatrix, 0);
 
+
       // Calculate model/view/projection matrices
       Matrix.multiplyMM(modelViewMatrix, 0, viewMatrix, 0, modelMatrix, 0);
       Matrix.multiplyMM(modelViewProjectionMatrix, 0, projectionMatrix, 0, modelViewMatrix, 0);
@@ -580,12 +652,14 @@ public class GeospatialActivity extends AppCompatActivity
     //new GrpcTask(this).execute("10.0.2.2", "9090");
 
     // Set the default anchor
-    //Earth earth = session.getEarth();
-    //this.defaultAnchor = createAnchor(earth, latitude, longitude, altitude, headingDegree);
-    //storeAnchorParameters(latitude, longitude, altitude, headingDegree);
-    //messageSnackbarHelper.showMessageWithDismiss(this,"Default anchor set!");
+    /*Earth earth = session.getEarth();
+    this.defaultAnchor = createAnchor(earth, latitude, longitude, altitude, headingDegree);
+    storeAnchorParameters(latitude, longitude, altitude, headingDegree);
+    messageSnackbarHelper.showMessageWithDismiss(this,"Default anchor set!");*/
 
-    ExecutorService executor = Executors.newSingleThreadExecutor();
+    // -----
+
+    /*ExecutorService executor = Executors.newSingleThreadExecutor();
     Handler handler = new Handler(Looper.getMainLooper());
 
     executor.execute(new Runnable() {
@@ -612,7 +686,7 @@ public class GeospatialActivity extends AppCompatActivity
           showErrorMessage(e);
         }
       }
-    });
+    });*/
   }
 
   private void showErrorMessage(Exception e) {
@@ -854,10 +928,6 @@ public class GeospatialActivity extends AppCompatActivity
       throw new AssertionError("Could not save the user preference to SharedPreferences!");
     }
     createSession();
-  }
-
-  private void updateDefaultAnchor() {
-
   }
 
   /*private static class GrpcTask extends AsyncTask<String, List<LocalRestaurant>, List<LocalRestaurant>> {
