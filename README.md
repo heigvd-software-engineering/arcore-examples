@@ -4,9 +4,13 @@ A collection of ARcore examples.
 ## The examples
 
 - [ArText](./ArText/) - An example of how to show a text with ArCore and SceneForm.
+
 ![](./demo-assets/ArText4-video.gif)
+
 - [java-geospatial](./java-geospatial/) - An example of use of the Geospatial API of ArCore.
+
 ![](./demo-assets/Geospatial-video.gif)
+
   - [java-server-grpc](./java-server-grpc/) - A small grpc server to communicate with the java-geospatial (WIP).
   - [kubernetes](./kubernetes/) - A simple configuration for the grpc service on a kubernetes cluster.
 
