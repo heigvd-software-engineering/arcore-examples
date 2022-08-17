@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ArText.iml" filepath="$PROJECT_DIR$/.idea/modules/ArText.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/ArText.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/ArText.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/ArText.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/ArText.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/ArText.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/ArText.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/ArText.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/ArText.app.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/core/ArText.core.iml" filepath="$PROJECT_DIR$/.idea/modules/core/ArText.core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/core/ArText.core.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/core/ArText.core.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/core/ArText.core.main.iml" filepath="$PROJECT_DIR$/.idea/modules/core/ArText.core.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/core/ArText.core.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/core/ArText.core.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sceneform/ArText.sceneform.iml" filepath="$PROJECT_DIR$/.idea/modules/sceneform/ArText.sceneform.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sceneform/ArText.sceneform.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/sceneform/ArText.sceneform.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sceneform/ArText.sceneform.main.iml" filepath="$PROJECT_DIR$/.idea/modules/sceneform/ArText.sceneform.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sceneform/ArText.sceneform.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/sceneform/ArText.sceneform.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ux/ArText.ux.iml" filepath="$PROJECT_DIR$/.idea/modules/ux/ArText.ux.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ux/ArText.ux.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/ux/ArText.ux.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ux/ArText.ux.main.iml" filepath="$PROJECT_DIR$/.idea/modules/ux/ArText.ux.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ux/ArText.ux.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/ux/ArText.ux.unitTest.iml" />
+    </modules>
+  </component>
+</project>

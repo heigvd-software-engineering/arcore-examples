@@ -1,0 +1,153 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="ch.heigvd.artext"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="30"
+8-->/Users/james/Documents/Avalia-HEIG/Projets/arcore-examples/ArText/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="32" />
+9-->/Users/james/Documents/Avalia-HEIG/Projets/arcore-examples/ArText/app/src/main/AndroidManifest.xml
+10
+11    <!-- Always needed for AR. -->
+12    <uses-permission android:name="android.permission.CAMERA" />
+12-->/Users/james/Documents/Avalia-HEIG/Projets/arcore-examples/ArText/app/src/main/AndroidManifest.xml:7:5-65
+12-->/Users/james/Documents/Avalia-HEIG/Projets/arcore-examples/ArText/app/src/main/AndroidManifest.xml:7:22-62
+13
+14    <!-- Needed to load gltf from network. -->
+15    <uses-permission android:name="android.permission.INTERNET" />
+15-->/Users/james/Documents/Avalia-HEIG/Projets/arcore-examples/ArText/app/src/main/AndroidManifest.xml:10:5-67
+15-->/Users/james/Documents/Avalia-HEIG/Projets/arcore-examples/ArText/app/src/main/AndroidManifest.xml:10:22-64
+16
+17    <!-- Sceneform requires OpenGLES 3.0 or later. -->
+18    <uses-feature
+18-->/Users/james/Documents/Avalia-HEIG/Projets/arcore-examples/ArText/app/src/main/AndroidManifest.xml:13:5-15:35
+19        android:glEsVersion="0x00030000"
+19-->/Users/james/Documents/Avalia-HEIG/Projets/arcore-examples/ArText/app/src/main/AndroidManifest.xml:14:9-41
+20        android:required="true" />
+20-->/Users/james/Documents/Avalia-HEIG/Projets/arcore-examples/ArText/app/src/main/AndroidManifest.xml:15:9-32
+21
+22    <!--
+23         Indicates that this app requires Google Play Services for AR ("AR Required") and results in
+24         the app only being visible in the Google Play Store on devices that support ARCore.
+25         For an "AR Optional" app, remove this tag.
+26    -->
+27    <uses-feature
+27-->/Users/james/Documents/Avalia-HEIG/Projets/arcore-examples/ArText/app/src/main/AndroidManifest.xml:20:5-22:35
+28        android:name="android.hardware.camera.ar"
+28-->/Users/james/Documents/Avalia-HEIG/Projets/arcore-examples/ArText/app/src/main/AndroidManifest.xml:21:9-50
+29        android:required="true" />
+29-->/Users/james/Documents/Avalia-HEIG/Projets/arcore-examples/ArText/app/src/main/AndroidManifest.xml:22:9-32
+30
+31    <queries>
+31-->[com.google.ar:core:1.31.0] /Users/james/.gradle/caches/transforms-3/8f3f9d14b75c1f8d9b464a665b0ed5e6/transformed/core-1.31.0/AndroidManifest.xml:29:5-31:15
+32        <package android:name="com.google.ar.core" />
+32-->[com.google.ar:core:1.31.0] /Users/james/.gradle/caches/transforms-3/8f3f9d14b75c1f8d9b464a665b0ed5e6/transformed/core-1.31.0/AndroidManifest.xml:30:9-54
+32-->[com.google.ar:core:1.31.0] /Users/james/.gradle/caches/transforms-3/8f3f9d14b75c1f8d9b464a665b0ed5e6/transformed/core-1.31.0/AndroidManifest.xml:30:18-51
+33    </queries>
+34
+35    <application
+35-->/Users/james/Documents/Avalia-HEIG/Projets/arcore-examples/ArText/app/src/main/AndroidManifest.xml:24:5-51:19
+36        android:allowBackup="true"
+36-->/Users/james/Documents/Avalia-HEIG/Projets/arcore-examples/ArText/app/src/main/AndroidManifest.xml:25:9-35
+37        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+37-->[androidx.core:core:1.7.0] /Users/james/.gradle/caches/transforms-3/32f956d965ce8e3cf09d1da0f309087c/transformed/core-1.7.0/AndroidManifest.xml:24:18-86
+38        android:dataExtractionRules="@xml/data_extraction_rules"
+38-->/Users/james/Documents/Avalia-HEIG/Projets/arcore-examples/ArText/app/src/main/AndroidManifest.xml:26:9-65
+39        android:debuggable="true"
+40        android:extractNativeLibs="false"
+41        android:fullBackupContent="@xml/backup_rules"
+41-->/Users/james/Documents/Avalia-HEIG/Projets/arcore-examples/ArText/app/src/main/AndroidManifest.xml:27:9-54
+42        android:icon="@mipmap/ic_launcher"
+42-->/Users/james/Documents/Avalia-HEIG/Projets/arcore-examples/ArText/app/src/main/AndroidManifest.xml:28:9-43
+43        android:label="@string/app_name"
+43-->/Users/james/Documents/Avalia-HEIG/Projets/arcore-examples/ArText/app/src/main/AndroidManifest.xml:29:9-41
+44        android:roundIcon="@mipmap/ic_launcher_round"
+44-->/Users/james/Documents/Avalia-HEIG/Projets/arcore-examples/ArText/app/src/main/AndroidManifest.xml:30:9-54
+45        android:supportsRtl="true"
+45-->/Users/james/Documents/Avalia-HEIG/Projets/arcore-examples/ArText/app/src/main/AndroidManifest.xml:31:9-35
+46        android:testOnly="true"
+47        android:theme="@style/Theme.ArText" >
+47-->/Users/james/Documents/Avalia-HEIG/Projets/arcore-examples/ArText/app/src/main/AndroidManifest.xml:32:9-44
+48
+49        <!--
+50        Indicates that this app requires Google Play Services for AR ("AR Required") and causes
+51        the Google Play Store to download and intall Google Play Services for AR along with the app.
+52        For an "AR Optional" app, specify "optional" instead of "required".
+53        -->
+54        <meta-data
+54-->/Users/james/Documents/Avalia-HEIG/Projets/arcore-examples/ArText/app/src/main/AndroidManifest.xml:37:9-39:40
+55            android:name="com.google.ar.core"
+55-->/Users/james/Documents/Avalia-HEIG/Projets/arcore-examples/ArText/app/src/main/AndroidManifest.xml:38:13-46
+56            android:value="required" />
+56-->/Users/james/Documents/Avalia-HEIG/Projets/arcore-examples/ArText/app/src/main/AndroidManifest.xml:39:13-37
+57
+58        <activity
+58-->/Users/james/Documents/Avalia-HEIG/Projets/arcore-examples/ArText/app/src/main/AndroidManifest.xml:40:9-50:20
+59            android:name="ch.heigvd.artext.MainActivity"
+59-->/Users/james/Documents/Avalia-HEIG/Projets/arcore-examples/ArText/app/src/main/AndroidManifest.xml:41:13-41
+60            android:configChanges="orientation|screenSize"
+60-->/Users/james/Documents/Avalia-HEIG/Projets/arcore-examples/ArText/app/src/main/AndroidManifest.xml:42:13-59
+61            android:exported="true"
+61-->/Users/james/Documents/Avalia-HEIG/Projets/arcore-examples/ArText/app/src/main/AndroidManifest.xml:43:13-36
+62            android:label="@string/app_name"
+62-->/Users/james/Documents/Avalia-HEIG/Projets/arcore-examples/ArText/app/src/main/AndroidManifest.xml:44:13-45
+63            android:screenOrientation="locked" >
+63-->/Users/james/Documents/Avalia-HEIG/Projets/arcore-examples/ArText/app/src/main/AndroidManifest.xml:45:13-47
+64            <intent-filter>
+64-->/Users/james/Documents/Avalia-HEIG/Projets/arcore-examples/ArText/app/src/main/AndroidManifest.xml:46:13-49:29
+65                <action android:name="android.intent.action.MAIN" />
+65-->/Users/james/Documents/Avalia-HEIG/Projets/arcore-examples/ArText/app/src/main/AndroidManifest.xml:47:17-69
+65-->/Users/james/Documents/Avalia-HEIG/Projets/arcore-examples/ArText/app/src/main/AndroidManifest.xml:47:25-66
+66
+67                <category android:name="android.intent.category.LAUNCHER" />
+67-->/Users/james/Documents/Avalia-HEIG/Projets/arcore-examples/ArText/app/src/main/AndroidManifest.xml:48:17-77
+67-->/Users/james/Documents/Avalia-HEIG/Projets/arcore-examples/ArText/app/src/main/AndroidManifest.xml:48:27-74
+68            </intent-filter>
+69        </activity>
+70
+71        <provider
+71-->[androidx.emoji2:emoji2:1.0.0] /Users/james/.gradle/caches/transforms-3/7e7a19b3f89528f2774baa72d8845689/transformed/emoji2-1.0.0/AndroidManifest.xml:26:9-34:20
+72            android:name="androidx.startup.InitializationProvider"
+72-->[androidx.emoji2:emoji2:1.0.0] /Users/james/.gradle/caches/transforms-3/7e7a19b3f89528f2774baa72d8845689/transformed/emoji2-1.0.0/AndroidManifest.xml:27:13-67
+73            android:authorities="ch.heigvd.artext.androidx-startup"
+73-->[androidx.emoji2:emoji2:1.0.0] /Users/james/.gradle/caches/transforms-3/7e7a19b3f89528f2774baa72d8845689/transformed/emoji2-1.0.0/AndroidManifest.xml:28:13-68
+74            android:exported="false" >
+74-->[androidx.emoji2:emoji2:1.0.0] /Users/james/.gradle/caches/transforms-3/7e7a19b3f89528f2774baa72d8845689/transformed/emoji2-1.0.0/AndroidManifest.xml:29:13-37
+75            <meta-data
+75-->[androidx.emoji2:emoji2:1.0.0] /Users/james/.gradle/caches/transforms-3/7e7a19b3f89528f2774baa72d8845689/transformed/emoji2-1.0.0/AndroidManifest.xml:31:13-33:52
+76                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+76-->[androidx.emoji2:emoji2:1.0.0] /Users/james/.gradle/caches/transforms-3/7e7a19b3f89528f2774baa72d8845689/transformed/emoji2-1.0.0/AndroidManifest.xml:32:17-75
+77                android:value="androidx.startup" />
+77-->[androidx.emoji2:emoji2:1.0.0] /Users/james/.gradle/caches/transforms-3/7e7a19b3f89528f2774baa72d8845689/transformed/emoji2-1.0.0/AndroidManifest.xml:33:17-49
+78            <meta-data
+78-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/james/.gradle/caches/transforms-3/81267404daf5235c5e128bfd74daa818/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:31:13-33:52
+79                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+79-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/james/.gradle/caches/transforms-3/81267404daf5235c5e128bfd74daa818/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:32:17-78
+80                android:value="androidx.startup" />
+80-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/james/.gradle/caches/transforms-3/81267404daf5235c5e128bfd74daa818/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:33:17-49
+81        </provider> <!-- The minimal version code of ARCore APK required for an app using this SDK. -->
+82        <meta-data
+82-->[com.google.ar:core:1.31.0] /Users/james/.gradle/caches/transforms-3/8f3f9d14b75c1f8d9b464a665b0ed5e6/transformed/core-1.31.0/AndroidManifest.xml:36:9-38:41
+83            android:name="com.google.ar.core.min_apk_version"
+83-->[com.google.ar:core:1.31.0] /Users/james/.gradle/caches/transforms-3/8f3f9d14b75c1f8d9b464a665b0ed5e6/transformed/core-1.31.0/AndroidManifest.xml:37:13-62
+84            android:value="220920000" /> <!-- This activity is critical for installing ARCore when it is not already present. -->
+84-->[com.google.ar:core:1.31.0] /Users/james/.gradle/caches/transforms-3/8f3f9d14b75c1f8d9b464a665b0ed5e6/transformed/core-1.31.0/AndroidManifest.xml:38:13-38
+85        <activity
+85-->[com.google.ar:core:1.31.0] /Users/james/.gradle/caches/transforms-3/8f3f9d14b75c1f8d9b464a665b0ed5e6/transformed/core-1.31.0/AndroidManifest.xml:40:9-46:80
+86            android:name="com.google.ar.core.InstallActivity"
+86-->[com.google.ar:core:1.31.0] /Users/james/.gradle/caches/transforms-3/8f3f9d14b75c1f8d9b464a665b0ed5e6/transformed/core-1.31.0/AndroidManifest.xml:41:13-62
+87            android:configChanges="keyboardHidden|orientation|screenSize"
+87-->[com.google.ar:core:1.31.0] /Users/james/.gradle/caches/transforms-3/8f3f9d14b75c1f8d9b464a665b0ed5e6/transformed/core-1.31.0/AndroidManifest.xml:42:13-74
+88            android:excludeFromRecents="true"
+88-->[com.google.ar:core:1.31.0] /Users/james/.gradle/caches/transforms-3/8f3f9d14b75c1f8d9b464a665b0ed5e6/transformed/core-1.31.0/AndroidManifest.xml:43:13-46
+89            android:exported="false"
+89-->[com.google.ar:core:1.31.0] /Users/james/.gradle/caches/transforms-3/8f3f9d14b75c1f8d9b464a665b0ed5e6/transformed/core-1.31.0/AndroidManifest.xml:44:13-37
+90            android:launchMode="singleTop"
+90-->[com.google.ar:core:1.31.0] /Users/james/.gradle/caches/transforms-3/8f3f9d14b75c1f8d9b464a665b0ed5e6/transformed/core-1.31.0/AndroidManifest.xml:45:13-43
+91            android:theme="@android:style/Theme.Material.Light.Dialog.Alert" />
+91-->[com.google.ar:core:1.31.0] /Users/james/.gradle/caches/transforms-3/8f3f9d14b75c1f8d9b464a665b0ed5e6/transformed/core-1.31.0/AndroidManifest.xml:46:13-77
+92    </application>
+93
+94</manifest>

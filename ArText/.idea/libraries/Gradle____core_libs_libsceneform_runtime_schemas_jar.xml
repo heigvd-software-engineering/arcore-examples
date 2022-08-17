@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: ./core/libs/libsceneform_runtime_schemas.jar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/core/libs/libsceneform_runtime_schemas.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

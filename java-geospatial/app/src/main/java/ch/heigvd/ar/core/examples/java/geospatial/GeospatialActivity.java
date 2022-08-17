@@ -402,11 +402,11 @@ public class GeospatialActivity extends AppCompatActivity
       Texture virtualObjectTexture =
           Texture.createFromAsset(
               render,
-              "models/spatial_marker_baked.png",
+              "models/black_texture.png",
               Texture.WrapMode.CLAMP_TO_EDGE,
               Texture.ColorFormat.SRGB);
 
-      virtualObjectMesh = Mesh.createFromAsset(render, "models/geospatial_marker.obj");
+      virtualObjectMesh = Mesh.createFromAsset(render, "models/arrow.obj");
       virtualObjectShader =
           Shader.createFromAssets(
                   render,
@@ -577,6 +577,7 @@ public class GeospatialActivity extends AppCompatActivity
   protected void onPostResume() {
     super.onPostResume();
 
+    /** WIP Communication with a grpc service to get a default anchor **/
     //new GrpcTask(this).execute("10.0.2.2", "9090");
 
     // Set the default anchor
@@ -585,7 +586,7 @@ public class GeospatialActivity extends AppCompatActivity
     //storeAnchorParameters(latitude, longitude, altitude, headingDegree);
     //messageSnackbarHelper.showMessageWithDismiss(this,"Default anchor set!");
 
-    ExecutorService executor = Executors.newSingleThreadExecutor();
+    /*ExecutorService executor = Executors.newSingleThreadExecutor();
     Handler handler = new Handler(Looper.getMainLooper());
 
     executor.execute(new Runnable() {
@@ -612,7 +613,7 @@ public class GeospatialActivity extends AppCompatActivity
           showErrorMessage(e);
         }
       }
-    });
+    });*/
   }
 
   private void showErrorMessage(Exception e) {
