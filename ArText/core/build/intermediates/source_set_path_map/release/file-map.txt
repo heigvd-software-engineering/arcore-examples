@@ -1,0 +1,12 @@
+com.google.ar.sceneform.core-jetified-lifecycle-runtime-ktx-2.4.1-0 /Users/james/.gradle/caches/transforms-3/57c1bd2be89a2235d5a7da17359899a9/transformed/jetified-lifecycle-runtime-ktx-2.4.1/res
+com.google.ar.sceneform.core-lifecycle-runtime-2.4.1-1 /Users/james/.gradle/caches/transforms-3/65fda09746d927d05d715dfc723a1bac/transformed/lifecycle-runtime-2.4.1/res
+com.google.ar.sceneform.core-jetified-core-1.31.0-2 /Users/james/.gradle/caches/transforms-3/798cdc63610da20f8cea87f88b9ec9f1/transformed/jetified-core-1.31.0/res
+com.google.ar.sceneform.core-jetified-filament-android-1.21.1-3 /Users/james/.gradle/caches/transforms-3/e0de30b64ec64ab4747bc02cafd4a9c1/transformed/jetified-filament-android-1.21.1/res
+com.google.ar.sceneform.core-pngs-4 /Users/james/Documents/Avalia-HEIG/Projets/sceneform-android/core/build/generated/res/pngs/release
+com.google.ar.sceneform.core-resValues-5 /Users/james/Documents/Avalia-HEIG/Projets/sceneform-android/core/build/generated/res/resValues/release
+com.google.ar.sceneform.core-rs-6 /Users/james/Documents/Avalia-HEIG/Projets/sceneform-android/core/build/generated/res/rs/release
+com.google.ar.sceneform.core-mergeReleaseResources-7 /Users/james/Documents/Avalia-HEIG/Projets/sceneform-android/core/build/intermediates/incremental/release/mergeReleaseResources/merged.dir
+com.google.ar.sceneform.core-mergeReleaseResources-8 /Users/james/Documents/Avalia-HEIG/Projets/sceneform-android/core/build/intermediates/incremental/release/mergeReleaseResources/stripped.dir
+com.google.ar.sceneform.core-merged_res-9 /Users/james/Documents/Avalia-HEIG/Projets/sceneform-android/core/build/intermediates/merged_res/release
+com.google.ar.sceneform.core-main-10 /Users/james/Documents/Avalia-HEIG/Projets/sceneform-android/core/src/main/res
+com.google.ar.sceneform.core-release-11 /Users/james/Documents/Avalia-HEIG/Projets/sceneform-android/core/src/release/res

@@ -1,0 +1,36 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.google.ar.sceneform.ux-mergeReleaseResources-18:/values-watch-v20/values-watch-v20.xml",
+            "map": [
+                {
+                    "source": "/Users/james/.gradle/caches/transforms-3/397f4eac15eaf5354aae8f1e0b439305/transformed/appcompat-1.4.1/res/values-watch-v20/values-watch-v20.xml",
+                    "from": {
+                        "startLines": "2,5,8",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,214,385",
+                        "endLines": "4,7,10",
+                        "endColumns": "12,12,12",
+                        "endOffsets": "209,380,553"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "com.google.ar.sceneform.ux-merged_res-20:/values-watch-v20/values-watch-v20.xml",
+            "map": [
+                {
+                    "source": "/Users/james/.gradle/caches/transforms-3/397f4eac15eaf5354aae8f1e0b439305/transformed/appcompat-1.4.1/res/values-watch-v20/values-watch-v20.xml",
+                    "from": {
+                        "startLines": "2,5,8",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,214,385",
+                        "endLines": "4,7,10",
+                        "endColumns": "12,12,12",
+                        "endOffsets": "209,380,553"
+                    }
+                }
+            ]
+        }
+    ]
+}

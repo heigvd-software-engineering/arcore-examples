@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 7.2.0" type="incidents">
+
+    <incident
+        id="SupportAnnotationUsage"
+        severity="warning"
+        message="The API level is already known to be at least 24 from the `minSdkVersion`">
+        <fix-replace
+            description="Delete annotation"
+            replacement=""/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/Light.java"
+            line="12"
+            column="1"
+            startOffset="375"
+            endLine="12"
+            endColumn="42"
+            endOffset="416"/>
+    </incident>
+
+    <incident
+        id="SupportAnnotationUsage"
+        severity="warning"
+        message="The API level is already known to be at least 24 from the `minSdkVersion`">
+        <fix-replace
+            description="Delete annotation"
+            replacement=""/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/Material.java"
+            line="27"
+            column="1"
+            startOffset="837"
+            endLine="27"
+            endColumn="42"
+            endOffset="878"/>
+    </incident>
+
+    <incident
+        id="SupportAnnotationUsage"
+        severity="warning"
+        message="The API level is already known to be at least 24 from the `minSdkVersion`">
+        <fix-replace
+            description="Delete annotation"
+            replacement=""/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/MaterialFactory.java"
+            line="10"
+            column="1"
+            startOffset="256"
+            endLine="10"
+            endColumn="42"
+            endOffset="297"/>
+    </incident>
+
+    <incident
+        id="SupportAnnotationUsage"
+        severity="warning"
+        message="The API level is already known to be at least 24 from the `minSdkVersion`">
+        <fix-replace
+            description="Delete annotation"
+            replacement=""/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/ModelRenderable.java"
+            line="20"
+            column="1"
+            startOffset="548"
+            endLine="20"
+            endColumn="42"
+            endOffset="589"/>
+    </incident>
+
+    <incident
+        id="ViewConstructor"
+        severity="warning"
+        message="Custom view `RenderViewToExternalTexture` is missing constructor used by tools: `(Context)` or `(Context,AttributeSet)` or `(Context,AttributeSet,int)`">
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/RenderViewToExternalTexture.java"
+            line="35"
+            column="7"
+            startOffset="1254"
+            endLine="35"
+            endColumn="34"
+            endOffset="1281"/>
+    </incident>
+
+    <incident
+        id="SupportAnnotationUsage"
+        severity="warning"
+        message="The API level is already known to be at least 24 from the `minSdkVersion`">
+        <fix-replace
+            description="Delete annotation"
+            replacement=""/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/Renderer.java"
+            line="78"
+            column="5"
+            startOffset="2778"
+            endLine="78"
+            endColumn="46"
+            endOffset="2819"/>
+    </incident>
+
+    <incident
+        id="SupportAnnotationUsage"
+        severity="warning"
+        message="The API level is already known to be at least 24 from the `minSdkVersion`">
+        <fix-replace
+            description="Delete annotation"
+            replacement=""/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/ShapeFactory.java"
+            line="16"
+            column="1"
+            startOffset="632"
+            endLine="16"
+            endColumn="42"
+            endOffset="673"/>
+    </incident>
+
+    <incident
+        id="SupportAnnotationUsage"
+        severity="warning"
+        message="The API level is already known to be at least 24 from the `minSdkVersion`">
+        <fix-replace
+            description="Delete annotation"
+            replacement=""/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/Texture.java"
+            line="23"
+            column="1"
+            startOffset="863"
+            endLine="23"
+            endColumn="42"
+            endOffset="904"/>
+    </incident>
+
+    <incident
+        id="SupportAnnotationUsage"
+        severity="warning"
+        message="The API level is already known to be at least 24 from the `minSdkVersion`">
+        <fix-replace
+            description="Delete annotation"
+            replacement=""/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/ViewRenderable.java"
+            line="38"
+            column="1"
+            startOffset="1407"
+            endLine="38"
+            endColumn="42"
+            endOffset="1448"/>
+    </incident>
+
+    <incident
+        id="ObsoleteSdkInt"
+        severity="warning"
+        message="Unnecessary; SDK_INT is always >= 24">
+        <fix-data conditional="true"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/utilities/AndroidPreconditions.java"
+            line="68"
+            column="41"
+            startOffset="2174"
+            endLine="68"
+            endColumn="88"
+            endOffset="2221"/>
+    </incident>
+
+    <incident
+        id="ObsoleteSdkInt"
+        severity="warning"
+        message="Unnecessary; SDK_INT is always >= 24">
+        <fix-data conditional="true"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/utilities/LoadHelper.java"
+            line="179"
+            column="13"
+            startOffset="6996"
+            endLine="179"
+            endColumn="64"
+            endOffset="7047"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of com.google.ar:core than 1.31.0 is available: 1.32.0">
+        <location
+            file="${:core*projectDir}/build.gradle"
+            line="56"
+            column="9"
+            startOffset="1851"
+            endLine="56"
+            endColumn="45"
+            endOffset="1887"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.annotation:annotation than 1.3.0 is available: 1.4.0">
+        <location
+            file="${:core*projectDir}/build.gradle"
+            line="59"
+            column="20"
+            startOffset="1924"
+            endLine="59"
+            endColumn="72"
+            endOffset="1976"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.lifecycle:lifecycle-runtime-ktx than 2.4.1 is available: 2.5.0">
+        <location
+            file="${:core*projectDir}/build.gradle"
+            line="60"
+            column="20"
+            startOffset="1996"
+            endLine="60"
+            endColumn="93"
+            endOffset="2069"/>
+    </incident>
+
+    <incident
+        id="IconLocation"
+        severity="warning"
+        message="Found bitmap drawable `res/drawable/sceneform_plane.png` in densityless folder">
+        <location
+            file="${:core*debug*sourceProvider*0*resDir*0}/drawable/sceneform_plane.png"/>
+    </incident>
+
+</incidents>

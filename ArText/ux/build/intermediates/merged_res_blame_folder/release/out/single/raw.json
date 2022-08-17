@@ -1,0 +1,70 @@
+[
+    {
+        "merged": "com.google.ar.sceneform.ux-merged_res-20:/raw/sceneform_default_light_probe.sfb",
+        "source": "com.google.ar.sceneform.ux-packaged_res-15:/raw/sceneform_default_light_probe.sfb"
+    },
+    {
+        "merged": "com.google.ar.sceneform.ux-merged_res-20:/raw/keep_arcore.xml",
+        "source": "com.google.ar.sceneform.ux-jetified-core-1.31.0-10:/raw/keep_arcore.xml"
+    },
+    {
+        "merged": "com.google.ar.sceneform.ux-merged_res-20:/raw/sceneform_transparent_textured_material.filamat",
+        "source": "com.google.ar.sceneform.ux-packaged_res-15:/raw/sceneform_transparent_textured_material.filamat"
+    },
+    {
+        "merged": "com.google.ar.sceneform.ux-merged_res-20:/raw/sceneform_face_mesh_occluder_material.filamat",
+        "source": "com.google.ar.sceneform.ux-main-21:/raw/sceneform_face_mesh_occluder_material.filamat"
+    },
+    {
+        "merged": "com.google.ar.sceneform.ux-merged_res-20:/raw/external_chroma_key_video_material.filamat",
+        "source": "com.google.ar.sceneform.ux-main-21:/raw/external_chroma_key_video_material.filamat"
+    },
+    {
+        "merged": "com.google.ar.sceneform.ux-merged_res-20:/raw/sceneform_opaque_textured_material.filamat",
+        "source": "com.google.ar.sceneform.ux-packaged_res-15:/raw/sceneform_opaque_textured_material.filamat"
+    },
+    {
+        "merged": "com.google.ar.sceneform.ux-merged_res-20:/raw/sceneform_opaque_colored_material.filamat",
+        "source": "com.google.ar.sceneform.ux-packaged_res-15:/raw/sceneform_opaque_colored_material.filamat"
+    },
+    {
+        "merged": "com.google.ar.sceneform.ux-merged_res-20:/raw/ar_environment_material_flat.filamat",
+        "source": "com.google.ar.sceneform.ux-packaged_res-15:/raw/ar_environment_material_flat.filamat"
+    },
+    {
+        "merged": "com.google.ar.sceneform.ux-merged_res-20:/raw/external_plain_video_material.filamat",
+        "source": "com.google.ar.sceneform.ux-main-21:/raw/external_plain_video_material.filamat"
+    },
+    {
+        "merged": "com.google.ar.sceneform.ux-merged_res-20:/raw/sceneform_footprint.glb",
+        "source": "com.google.ar.sceneform.ux-main-21:/raw/sceneform_footprint.glb"
+    },
+    {
+        "merged": "com.google.ar.sceneform.ux-merged_res-20:/raw/ar_environment_material_depth.filamat",
+        "source": "com.google.ar.sceneform.ux-packaged_res-15:/raw/ar_environment_material_depth.filamat"
+    },
+    {
+        "merged": "com.google.ar.sceneform.ux-merged_res-20:/raw/sceneform_face_mesh_material.filamat",
+        "source": "com.google.ar.sceneform.ux-main-21:/raw/sceneform_face_mesh_material.filamat"
+    },
+    {
+        "merged": "com.google.ar.sceneform.ux-merged_res-20:/raw/sceneform_plane_shadow_material.filamat",
+        "source": "com.google.ar.sceneform.ux-packaged_res-15:/raw/sceneform_plane_shadow_material.filamat"
+    },
+    {
+        "merged": "com.google.ar.sceneform.ux-merged_res-20:/raw/sceneform_transparent_colored_material.filamat",
+        "source": "com.google.ar.sceneform.ux-packaged_res-15:/raw/sceneform_transparent_colored_material.filamat"
+    },
+    {
+        "merged": "com.google.ar.sceneform.ux-merged_res-20:/raw/sceneform_view_material.filamat",
+        "source": "com.google.ar.sceneform.ux-packaged_res-15:/raw/sceneform_view_material.filamat"
+    },
+    {
+        "merged": "com.google.ar.sceneform.ux-merged_res-20:/raw/sceneform_camera_material.filamat",
+        "source": "com.google.ar.sceneform.ux-packaged_res-15:/raw/sceneform_camera_material.filamat"
+    },
+    {
+        "merged": "com.google.ar.sceneform.ux-merged_res-20:/raw/sceneform_plane_material.filamat",
+        "source": "com.google.ar.sceneform.ux-packaged_res-15:/raw/sceneform_plane_material.filamat"
+    }
+]

@@ -1,0 +1,48 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.google.ar.sceneform.core-merged_res-8:/values-fi/values-fi.xml",
+            "map": [
+                {
+                    "source": "/Users/james/.gradle/caches/transforms-3/798cdc63610da20f8cea87f88b9ec9f1/transformed/jetified-core-1.31.0/res/values-fi/values.xml",
+                    "from": {
+                        "startLines": "4,5,6,7,8",
+                        "startColumns": "0,0,0,0,0",
+                        "startOffsets": "190,235,283,412,546",
+                        "endColumns": "44,47,128,133,86",
+                        "endOffsets": "234,282,411,545,632"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "55,104,156,289,427",
+                        "endColumns": "48,51,132,137,90",
+                        "endOffsets": "99,151,284,422,513"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "com.google.ar.sceneform.core-mergeReleaseResources-6:/values-fi/values-fi.xml",
+            "map": [
+                {
+                    "source": "/Users/james/.gradle/caches/transforms-3/798cdc63610da20f8cea87f88b9ec9f1/transformed/jetified-core-1.31.0/res/values-fi/values.xml",
+                    "from": {
+                        "startLines": "4,5,6,7,8",
+                        "startColumns": "0,0,0,0,0",
+                        "startOffsets": "190,235,283,412,546",
+                        "endColumns": "44,47,128,133,86",
+                        "endOffsets": "234,282,411,545,632"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "55,104,156,289,427",
+                        "endColumns": "48,51,132,137,90",
+                        "endOffsets": "99,151,284,422,513"
+                    }
+                }
+            ]
+        }
+    ]
+}

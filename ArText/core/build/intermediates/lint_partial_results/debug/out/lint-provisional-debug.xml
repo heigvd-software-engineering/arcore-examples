@@ -1,0 +1,5169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 7.2.0" type="conditional_incidents">
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/Node.java"
+            line="1600"
+            column="31"
+            startOffset="59351"
+            endLine="1600"
+            endColumn="45"
+            endOffset="59365"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `createInstance`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/SceneView.java"
+            line="373"
+            column="24"
+            startOffset="12812"
+            endLine="373"
+            endColumn="36"
+            endOffset="12824"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `Renderer`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="ObsoleteSdkInt"
+        severity="warning"
+        message="Unnecessary; SDK_INT is always >= 24">
+        <fix-replace
+            description="Delete @RequiresApi"
+            replacement="">
+            <range
+                file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/SequentialTask.java"
+                startOffset="404"
+                endOffset="418"/>
+        </fix-replace>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/SequentialTask.java"
+            line="15"
+            column="1"
+            startOffset="404"
+            endLine="15"
+            endColumn="15"
+            endOffset="418"/>
+        <map>
+            <condition minGE="24"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/ViewTouchHelpers.java"
+            line="83"
+            column="35"
+            startOffset="3269"
+            endLine="83"
+            endColumn="42"
+            endOffset="3276"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `getView`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/ViewTouchHelpers.java"
+            line="112"
+            column="27"
+            startOffset="4173"
+            endLine="112"
+            endColumn="34"
+            endOffset="4180"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `getView`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/ViewTouchHelpers.java"
+            line="126"
+            column="32"
+            startOffset="4847"
+            endLine="126"
+            endColumn="39"
+            endOffset="4854"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `getView`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/ViewTouchHelpers.java"
+            line="140"
+            column="73"
+            startOffset="5402"
+            endLine="140"
+            endColumn="93"
+            endOffset="5422"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `getVerticalAlignment`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/ViewTouchHelpers.java"
+            line="142"
+            column="12"
+            startOffset="5470"
+            endLine="142"
+            endColumn="18"
+            endOffset="5476"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Field requires API level 24 (current min is %1$s): `BOTTOM`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/ViewTouchHelpers.java"
+            line="145"
+            column="12"
+            startOffset="5540"
+            endLine="145"
+            endColumn="18"
+            endOffset="5546"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Field requires API level 24 (current min is %1$s): `CENTER`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/ViewTouchHelpers.java"
+            line="148"
+            column="12"
+            startOffset="5625"
+            endLine="148"
+            endColumn="15"
+            endOffset="5628"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Field requires API level 24 (current min is %1$s): `TOP`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/ViewTouchHelpers.java"
+            line="154"
+            column="24"
+            startOffset="5783"
+            endLine="154"
+            endColumn="46"
+            endOffset="5805"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `getHorizontalAlignment`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/ViewTouchHelpers.java"
+            line="156"
+            column="12"
+            startOffset="5855"
+            endLine="156"
+            endColumn="16"
+            endOffset="5859"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Field requires API level 24 (current min is %1$s): `LEFT`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/ViewTouchHelpers.java"
+            line="159"
+            column="12"
+            startOffset="5910"
+            endLine="159"
+            endColumn="18"
+            endOffset="5916"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Field requires API level 24 (current min is %1$s): `CENTER`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/ViewTouchHelpers.java"
+            line="162"
+            column="12"
+            startOffset="5985"
+            endLine="162"
+            endColumn="17"
+            endOffset="5990"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Field requires API level 24 (current min is %1$s): `RIGHT`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/ViewTouchHelpers.java"
+            line="171"
+            column="32"
+            startOffset="6212"
+            endLine="171"
+            endColumn="39"
+            endOffset="6219"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `getView`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/ViewTouchHelpers.java"
+            line="173"
+            column="35"
+            startOffset="6290"
+            endLine="173"
+            endColumn="43"
+            endOffset="6298"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `getSizer`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/ViewTouchHelpers.java"
+            line="173"
+            column="69"
+            startOffset="6324"
+            endLine="173"
+            endColumn="76"
+            endOffset="6331"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `getView`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/CameraStream.java"
+            line="178"
+            column="26"
+            startOffset="6628"
+            endLine="178"
+            endColumn="33"
+            endOffset="6635"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `builder`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/CameraStream.java"
+            line="179"
+            column="26"
+            startOffset="6663"
+            endLine="179"
+            endColumn="35"
+            endOffset="6672"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `setSource`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/CameraStream.java"
+            line="184"
+            column="26"
+            startOffset="6976"
+            endLine="184"
+            endColumn="31"
+            endOffset="6981"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `build`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/CameraStream.java"
+            line="190"
+            column="38"
+            startOffset="7205"
+            endLine="190"
+            endColumn="65"
+            endOffset="7232"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `getFilamentMaterialInstance`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/CameraStream.java"
+            line="212"
+            column="26"
+            startOffset="8244"
+            endLine="212"
+            endColumn="33"
+            endOffset="8251"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `builder`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/CameraStream.java"
+            line="213"
+            column="26"
+            startOffset="8279"
+            endLine="213"
+            endColumn="35"
+            endOffset="8288"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `setSource`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/CameraStream.java"
+            line="218"
+            column="26"
+            startOffset="8602"
+            endLine="218"
+            endColumn="31"
+            endOffset="8607"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `build`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/CameraStream.java"
+            line="223"
+            column="38"
+            startOffset="8830"
+            endLine="223"
+            endColumn="65"
+            endOffset="8857"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `getFilamentMaterialInstance`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/CameraStream.java"
+            line="256"
+            column="24"
+            startOffset="10364"
+            endLine="256"
+            endColumn="42"
+            endOffset="10382"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `setExternalTexture`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/CameraStream.java"
+            line="274"
+            column="33"
+            startOffset="11133"
+            endLine="274"
+            endColumn="51"
+            endOffset="11151"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `setExternalTexture`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/CameraStream.java"
+            line="291"
+            column="53"
+            startOffset="11843"
+            endLine="291"
+            endColumn="80"
+            endOffset="11870"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `getFilamentMaterialInstance`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/CameraStream.java"
+            line="310"
+            column="67"
+            startOffset="12630"
+            endLine="310"
+            endColumn="94"
+            endOffset="12657"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `getFilamentMaterialInstance`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/CameraStream.java"
+            line="399"
+            column="37"
+            startOffset="15708"
+            endLine="399"
+            endColumn="52"
+            endOffset="15723"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `setDepthTexture`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="ObsoleteSdkInt"
+        severity="warning"
+        message="Unnecessary; SDK_INT is always >= 24">
+        <fix-replace
+            description="Delete @RequiresApi"
+            replacement="">
+            <range
+                file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/Light.java"
+                startOffset="375"
+                endOffset="416"/>
+        </fix-replace>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/Light.java"
+            line="12"
+            column="1"
+            startOffset="375"
+            endLine="12"
+            endColumn="42"
+            endOffset="416"/>
+        <map>
+            <condition minGE="24"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/LightInstance.java"
+            line="43"
+            column="32"
+            startOffset="1338"
+            endLine="43"
+            endColumn="48"
+            endOffset="1354"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `getLocalPosition`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/LightInstance.java"
+            line="44"
+            column="33"
+            startOffset="1390"
+            endLine="44"
+            endColumn="50"
+            endOffset="1407"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `getLocalDirection`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/LightInstance.java"
+            line="48"
+            column="11"
+            startOffset="1520"
+            endLine="48"
+            endColumn="29"
+            endOffset="1538"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `addChangedListener`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/LightInstance.java"
+            line="55"
+            column="15"
+            startOffset="1780"
+            endLine="55"
+            endColumn="22"
+            endOffset="1787"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `getType`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/LightInstance.java"
+            line="55"
+            column="39"
+            startOffset="1804"
+            endLine="55"
+            endColumn="44"
+            endOffset="1809"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Field requires API level 24 (current min is %1$s): `POINT`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/LightInstance.java"
+            line="58"
+            column="21"
+            startOffset="1910"
+            endLine="58"
+            endColumn="37"
+            endOffset="1926"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `getLocalPosition`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/LightInstance.java"
+            line="58"
+            column="49"
+            startOffset="1938"
+            endLine="58"
+            endColumn="65"
+            endOffset="1954"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `getLocalPosition`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/LightInstance.java"
+            line="58"
+            column="77"
+            startOffset="1966"
+            endLine="58"
+            endColumn="93"
+            endOffset="1982"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `getLocalPosition`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/LightInstance.java"
+            line="59"
+            column="24"
+            startOffset="2011"
+            endLine="59"
+            endColumn="32"
+            endOffset="2019"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `getColor`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/LightInstance.java"
+            line="59"
+            column="44"
+            startOffset="2031"
+            endLine="59"
+            endColumn="52"
+            endOffset="2039"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `getColor`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/LightInstance.java"
+            line="59"
+            column="64"
+            startOffset="2051"
+            endLine="59"
+            endColumn="72"
+            endOffset="2059"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `getColor`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/LightInstance.java"
+            line="60"
+            column="28"
+            startOffset="2092"
+            endLine="60"
+            endColumn="40"
+            endOffset="2104"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `getIntensity`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/LightInstance.java"
+            line="61"
+            column="26"
+            startOffset="2133"
+            endLine="61"
+            endColumn="42"
+            endOffset="2149"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `getFalloffRadius`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/LightInstance.java"
+            line="62"
+            column="30"
+            startOffset="2182"
+            endLine="62"
+            endColumn="52"
+            endOffset="2204"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `isShadowCastingEnabled`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/LightInstance.java"
+            line="64"
+            column="22"
+            startOffset="2283"
+            endLine="64"
+            endColumn="29"
+            endOffset="2290"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `getType`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/LightInstance.java"
+            line="64"
+            column="46"
+            startOffset="2307"
+            endLine="64"
+            endColumn="57"
+            endOffset="2318"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Field requires API level 24 (current min is %1$s): `DIRECTIONAL`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/LightInstance.java"
+            line="67"
+            column="21"
+            startOffset="2426"
+            endLine="67"
+            endColumn="38"
+            endOffset="2443"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `getLocalDirection`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/LightInstance.java"
+            line="67"
+            column="50"
+            startOffset="2455"
+            endLine="67"
+            endColumn="67"
+            endOffset="2472"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `getLocalDirection`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/LightInstance.java"
+            line="67"
+            column="79"
+            startOffset="2484"
+            endLine="67"
+            endColumn="96"
+            endOffset="2501"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `getLocalDirection`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/LightInstance.java"
+            line="68"
+            column="24"
+            startOffset="2530"
+            endLine="68"
+            endColumn="32"
+            endOffset="2538"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `getColor`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/LightInstance.java"
+            line="68"
+            column="44"
+            startOffset="2550"
+            endLine="68"
+            endColumn="52"
+            endOffset="2558"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `getColor`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/LightInstance.java"
+            line="68"
+            column="64"
+            startOffset="2570"
+            endLine="68"
+            endColumn="72"
+            endOffset="2578"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `getColor`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/LightInstance.java"
+            line="69"
+            column="28"
+            startOffset="2611"
+            endLine="69"
+            endColumn="40"
+            endOffset="2623"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `getIntensity`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/LightInstance.java"
+            line="70"
+            column="30"
+            startOffset="2656"
+            endLine="70"
+            endColumn="52"
+            endOffset="2678"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `isShadowCastingEnabled`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/LightInstance.java"
+            line="72"
+            column="22"
+            startOffset="2757"
+            endLine="72"
+            endColumn="29"
+            endOffset="2764"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `getType`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/LightInstance.java"
+            line="72"
+            column="46"
+            startOffset="2781"
+            endLine="72"
+            endColumn="55"
+            endOffset="2790"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Field requires API level 24 (current min is %1$s): `SPOTLIGHT`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/LightInstance.java"
+            line="75"
+            column="21"
+            startOffset="2890"
+            endLine="75"
+            endColumn="37"
+            endOffset="2906"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `getLocalPosition`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/LightInstance.java"
+            line="75"
+            column="49"
+            startOffset="2918"
+            endLine="75"
+            endColumn="65"
+            endOffset="2934"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `getLocalPosition`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/LightInstance.java"
+            line="75"
+            column="77"
+            startOffset="2946"
+            endLine="75"
+            endColumn="93"
+            endOffset="2962"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `getLocalPosition`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/LightInstance.java"
+            line="77"
+            column="21"
+            startOffset="3010"
+            endLine="77"
+            endColumn="38"
+            endOffset="3027"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `getLocalDirection`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/LightInstance.java"
+            line="77"
+            column="50"
+            startOffset="3039"
+            endLine="77"
+            endColumn="67"
+            endOffset="3056"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `getLocalDirection`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/LightInstance.java"
+            line="77"
+            column="79"
+            startOffset="3068"
+            endLine="77"
+            endColumn="96"
+            endOffset="3085"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `getLocalDirection`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/LightInstance.java"
+            line="78"
+            column="24"
+            startOffset="3114"
+            endLine="78"
+            endColumn="32"
+            endOffset="3122"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `getColor`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/LightInstance.java"
+            line="78"
+            column="44"
+            startOffset="3134"
+            endLine="78"
+            endColumn="52"
+            endOffset="3142"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `getColor`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/LightInstance.java"
+            line="78"
+            column="64"
+            startOffset="3154"
+            endLine="78"
+            endColumn="72"
+            endOffset="3162"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `getColor`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/LightInstance.java"
+            line="79"
+            column="28"
+            startOffset="3195"
+            endLine="79"
+            endColumn="40"
+            endOffset="3207"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `getIntensity`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/LightInstance.java"
+            line="81"
+            column="30"
+            startOffset="3266"
+            endLine="81"
+            endColumn="47"
+            endOffset="3283"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `getInnerConeAngle`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/LightInstance.java"
+            line="81"
+            column="57"
+            startOffset="3293"
+            endLine="81"
+            endColumn="74"
+            endOffset="3310"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `getOuterConeAngle`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/LightInstance.java"
+            line="82"
+            column="21"
+            startOffset="3335"
+            endLine="82"
+            endColumn="38"
+            endOffset="3352"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `getOuterConeAngle`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/LightInstance.java"
+            line="83"
+            column="30"
+            startOffset="3385"
+            endLine="83"
+            endColumn="52"
+            endOffset="3407"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `isShadowCastingEnabled`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/LightInstance.java"
+            line="85"
+            column="22"
+            startOffset="3486"
+            endLine="85"
+            endColumn="29"
+            endOffset="3493"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `getType`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/LightInstance.java"
+            line="85"
+            column="46"
+            startOffset="3510"
+            endLine="85"
+            endColumn="63"
+            endOffset="3527"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Field requires API level 24 (current min is %1$s): `FOCUSED_SPOTLIGHT`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/LightInstance.java"
+            line="88"
+            column="21"
+            startOffset="3635"
+            endLine="88"
+            endColumn="37"
+            endOffset="3651"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `getLocalPosition`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/LightInstance.java"
+            line="88"
+            column="49"
+            startOffset="3663"
+            endLine="88"
+            endColumn="65"
+            endOffset="3679"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `getLocalPosition`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/LightInstance.java"
+            line="88"
+            column="77"
+            startOffset="3691"
+            endLine="88"
+            endColumn="93"
+            endOffset="3707"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `getLocalPosition`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/LightInstance.java"
+            line="90"
+            column="21"
+            startOffset="3755"
+            endLine="90"
+            endColumn="38"
+            endOffset="3772"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `getLocalDirection`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/LightInstance.java"
+            line="90"
+            column="50"
+            startOffset="3784"
+            endLine="90"
+            endColumn="67"
+            endOffset="3801"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `getLocalDirection`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/LightInstance.java"
+            line="90"
+            column="79"
+            startOffset="3813"
+            endLine="90"
+            endColumn="96"
+            endOffset="3830"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `getLocalDirection`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/LightInstance.java"
+            line="91"
+            column="24"
+            startOffset="3859"
+            endLine="91"
+            endColumn="32"
+            endOffset="3867"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `getColor`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/LightInstance.java"
+            line="91"
+            column="44"
+            startOffset="3879"
+            endLine="91"
+            endColumn="52"
+            endOffset="3887"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `getColor`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/LightInstance.java"
+            line="91"
+            column="64"
+            startOffset="3899"
+            endLine="91"
+            endColumn="72"
+            endOffset="3907"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `getColor`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/LightInstance.java"
+            line="92"
+            column="28"
+            startOffset="3940"
+            endLine="92"
+            endColumn="40"
+            endOffset="3952"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `getIntensity`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/LightInstance.java"
+            line="94"
+            column="30"
+            startOffset="4011"
+            endLine="94"
+            endColumn="47"
+            endOffset="4028"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `getInnerConeAngle`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/LightInstance.java"
+            line="94"
+            column="57"
+            startOffset="4038"
+            endLine="94"
+            endColumn="74"
+            endOffset="4055"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `getOuterConeAngle`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/LightInstance.java"
+            line="95"
+            column="21"
+            startOffset="4080"
+            endLine="95"
+            endColumn="38"
+            endOffset="4097"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `getOuterConeAngle`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/LightInstance.java"
+            line="96"
+            column="30"
+            startOffset="4130"
+            endLine="96"
+            endColumn="52"
+            endOffset="4152"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `isShadowCastingEnabled`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/LightInstance.java"
+            line="118"
+            column="41"
+            startOffset="4865"
+            endLine="118"
+            endColumn="48"
+            endOffset="4872"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `getType`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/LightInstance.java"
+            line="122"
+            column="42"
+            startOffset="5076"
+            endLine="122"
+            endColumn="49"
+            endOffset="5083"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `getType`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/LightInstance.java"
+            line="153"
+            column="13"
+            startOffset="5793"
+            endLine="153"
+            endColumn="34"
+            endOffset="5814"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `removeChangedListener`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/LightInstance.java"
+            line="194"
+            column="27"
+            startOffset="6936"
+            endLine="194"
+            endColumn="43"
+            endOffset="6952"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `getLocalPosition`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/LightInstance.java"
+            line="195"
+            column="28"
+            startOffset="6983"
+            endLine="195"
+            endColumn="45"
+            endOffset="7000"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `getLocalDirection`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/LightInstance.java"
+            line="199"
+            column="43"
+            startOffset="7184"
+            endLine="199"
+            endColumn="50"
+            endOffset="7191"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `getType`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/LightInstance.java"
+            line="202"
+            column="44"
+            startOffset="7344"
+            endLine="202"
+            endColumn="51"
+            endOffset="7351"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `getType`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/LightInstance.java"
+            line="207"
+            column="43"
+            startOffset="7514"
+            endLine="207"
+            endColumn="51"
+            endOffset="7522"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `getColor`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/LightInstance.java"
+            line="207"
+            column="63"
+            startOffset="7534"
+            endLine="207"
+            endColumn="71"
+            endOffset="7542"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `getColor`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/LightInstance.java"
+            line="207"
+            column="83"
+            startOffset="7554"
+            endLine="207"
+            endColumn="91"
+            endOffset="7562"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `getColor`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/LightInstance.java"
+            line="208"
+            column="47"
+            startOffset="7615"
+            endLine="208"
+            endColumn="59"
+            endOffset="7627"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `getIntensity`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/LightInstance.java"
+            line="209"
+            column="15"
+            startOffset="7646"
+            endLine="209"
+            endColumn="22"
+            endOffset="7653"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `getType`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/LightInstance.java"
+            line="209"
+            column="39"
+            startOffset="7670"
+            endLine="209"
+            endColumn="44"
+            endOffset="7675"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Field requires API level 24 (current min is %1$s): `POINT`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/LightInstance.java"
+            line="210"
+            column="47"
+            startOffset="7725"
+            endLine="210"
+            endColumn="63"
+            endOffset="7741"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `getFalloffRadius`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/LightInstance.java"
+            line="211"
+            column="22"
+            startOffset="7767"
+            endLine="211"
+            endColumn="29"
+            endOffset="7774"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `getType`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/LightInstance.java"
+            line="211"
+            column="46"
+            startOffset="7791"
+            endLine="211"
+            endColumn="55"
+            endOffset="7800"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Field requires API level 24 (current min is %1$s): `SPOTLIGHT`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/LightInstance.java"
+            line="212"
+            column="18"
+            startOffset="7818"
+            endLine="212"
+            endColumn="25"
+            endOffset="7825"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `getType`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/LightInstance.java"
+            line="212"
+            column="42"
+            startOffset="7842"
+            endLine="212"
+            endColumn="59"
+            endOffset="7859"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Field requires API level 24 (current min is %1$s): `FOCUSED_SPOTLIGHT`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/LightInstance.java"
+            line="215"
+            column="26"
+            startOffset="7945"
+            endLine="215"
+            endColumn="43"
+            endOffset="7962"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `getInnerConeAngle`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/LightInstance.java"
+            line="215"
+            column="53"
+            startOffset="7972"
+            endLine="215"
+            endColumn="70"
+            endOffset="7989"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `getOuterConeAngle`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/LightInstance.java"
+            line="216"
+            column="17"
+            startOffset="8010"
+            endLine="216"
+            endColumn="34"
+            endOffset="8027"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `getOuterConeAngle`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/LightInstance.java"
+            line="221"
+            column="31"
+            startOffset="8143"
+            endLine="221"
+            endColumn="36"
+            endOffset="8148"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Field requires API level 24 (current min is %1$s): `POINT`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/LightInstance.java"
+            line="222"
+            column="31"
+            startOffset="8179"
+            endLine="222"
+            endColumn="40"
+            endOffset="8188"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Field requires API level 24 (current min is %1$s): `SPOTLIGHT`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/LightInstance.java"
+            line="223"
+            column="31"
+            startOffset="8219"
+            endLine="223"
+            endColumn="48"
+            endOffset="8236"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Field requires API level 24 (current min is %1$s): `FOCUSED_SPOTLIGHT`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/LightInstance.java"
+            line="227"
+            column="31"
+            startOffset="8344"
+            endLine="227"
+            endColumn="40"
+            endOffset="8353"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Field requires API level 24 (current min is %1$s): `SPOTLIGHT`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/LightInstance.java"
+            line="228"
+            column="31"
+            startOffset="8384"
+            endLine="228"
+            endColumn="48"
+            endOffset="8401"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Field requires API level 24 (current min is %1$s): `FOCUSED_SPOTLIGHT`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/LightInstance.java"
+            line="229"
+            column="31"
+            startOffset="8432"
+            endLine="229"
+            endColumn="42"
+            endOffset="8443"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Field requires API level 24 (current min is %1$s): `DIRECTIONAL`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/LoadRenderableFromSfbTask.java"
+            line="299"
+            column="20"
+            startOffset="10014"
+            endLine="299"
+            endColumn="27"
+            endOffset="10021"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `builder`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/LoadRenderableFromSfbTask.java"
+            line="299"
+            column="30"
+            startOffset="10024"
+            endLine="299"
+            endColumn="39"
+            endOffset="10033"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `setSource`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/LoadRenderableFromSfbTask.java"
+            line="299"
+            column="46"
+            startOffset="10040"
+            endLine="299"
+            endColumn="59"
+            endOffset="10053"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `setRegistryId`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/LoadRenderableFromSfbTask.java"
+            line="299"
+            column="72"
+            startOffset="10066"
+            endLine="299"
+            endColumn="77"
+            endOffset="10071"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `build`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/LoadRenderableFromSfbTask.java"
+            line="341"
+            column="64"
+            startOffset="11952"
+            endLine="341"
+            endColumn="72"
+            endOffset="11960"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `makeCopy`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/LoadRenderableFromSfbTask.java"
+            line="343"
+            column="16"
+            startOffset="12040"
+            endLine="343"
+            endColumn="38"
+            endOffset="12062"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `copyMaterialParameters`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/LoadRenderableFromSfbTask.java"
+            line="416"
+            column="51"
+            startOffset="15078"
+            endLine="416"
+            endColumn="57"
+            endOffset="15084"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `values`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/LoadRenderableFromSfbTask.java"
+            line="429"
+            column="60"
+            startOffset="15740"
+            endLine="429"
+            endColumn="69"
+            endOffset="15749"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Field requires API level 24 (current min is %1$s): `COLOR_MAP`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/LoadRenderableFromSfbTask.java"
+            line="434"
+            column="21"
+            startOffset="15914"
+            endLine="434"
+            endColumn="28"
+            endOffset="15921"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `builder`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/LoadRenderableFromSfbTask.java"
+            line="435"
+            column="18"
+            startOffset="15941"
+            endLine="435"
+            endColumn="26"
+            endOffset="15949"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `setUsage`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/LoadRenderableFromSfbTask.java"
+            line="436"
+            column="18"
+            startOffset="15974"
+            endLine="436"
+            endColumn="28"
+            endOffset="15984"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `setSampler`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/LoadRenderableFromSfbTask.java"
+            line="437"
+            column="18"
+            startOffset="16035"
+            endLine="437"
+            endColumn="34"
+            endOffset="16051"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `setPremultiplied`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/LoadRenderableFromSfbTask.java"
+            line="438"
+            column="18"
+            startOffset="16087"
+            endLine="438"
+            endColumn="27"
+            endOffset="16096"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `setSource`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/LoadRenderableFromSfbTask.java"
+            line="443"
+            column="18"
+            startOffset="16285"
+            endLine="443"
+            endColumn="23"
+            endOffset="16290"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `build`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/LoadRenderableFromSfbTask.java"
+            line="470"
+            column="28"
+            startOffset="17382"
+            endLine="470"
+            endColumn="35"
+            endOffset="17389"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `builder`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/LoadRenderableFromSfbTask.java"
+            line="471"
+            column="10"
+            startOffset="17401"
+            endLine="471"
+            endColumn="22"
+            endOffset="17413"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `setMinFilter`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/LoadRenderableFromSfbTask.java"
+            line="472"
+            column="10"
+            startOffset="17458"
+            endLine="472"
+            endColumn="22"
+            endOffset="17470"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `setMagFilter`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/LoadRenderableFromSfbTask.java"
+            line="473"
+            column="10"
+            startOffset="17515"
+            endLine="473"
+            endColumn="22"
+            endOffset="17527"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `setWrapModeR`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/LoadRenderableFromSfbTask.java"
+            line="474"
+            column="10"
+            startOffset="17548"
+            endLine="474"
+            endColumn="22"
+            endOffset="17560"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `setWrapModeS`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/LoadRenderableFromSfbTask.java"
+            line="475"
+            column="10"
+            startOffset="17581"
+            endLine="475"
+            endColumn="22"
+            endOffset="17593"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `setWrapModeT`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/LoadRenderableFromSfbTask.java"
+            line="476"
+            column="10"
+            startOffset="17614"
+            endLine="476"
+            endColumn="15"
+            endOffset="17619"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `build`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/LoadRenderableFromSfbTask.java"
+            line="724"
+            column="42"
+            startOffset="27072"
+            endLine="724"
+            endColumn="49"
+            endOffset="27079"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Field requires API level 24 (current min is %1$s): `NEAREST`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/LoadRenderableFromSfbTask.java"
+            line="726"
+            column="42"
+            startOffset="27141"
+            endLine="726"
+            endColumn="48"
+            endOffset="27147"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Field requires API level 24 (current min is %1$s): `LINEAR`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/LoadRenderableFromSfbTask.java"
+            line="737"
+            column="42"
+            startOffset="27531"
+            endLine="737"
+            endColumn="49"
+            endOffset="27538"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Field requires API level 24 (current min is %1$s): `NEAREST`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/LoadRenderableFromSfbTask.java"
+            line="739"
+            column="42"
+            startOffset="27600"
+            endLine="739"
+            endColumn="48"
+            endOffset="27606"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Field requires API level 24 (current min is %1$s): `LINEAR`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/LoadRenderableFromSfbTask.java"
+            line="741"
+            column="42"
+            startOffset="27684"
+            endLine="741"
+            endColumn="64"
+            endOffset="27706"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Field requires API level 24 (current min is %1$s): `NEAREST_MIPMAP_NEAREST`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/LoadRenderableFromSfbTask.java"
+            line="743"
+            column="42"
+            startOffset="27783"
+            endLine="743"
+            endColumn="63"
+            endOffset="27804"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Field requires API level 24 (current min is %1$s): `LINEAR_MIPMAP_NEAREST`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/LoadRenderableFromSfbTask.java"
+            line="745"
+            column="42"
+            startOffset="27881"
+            endLine="745"
+            endColumn="63"
+            endOffset="27902"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Field requires API level 24 (current min is %1$s): `NEAREST_MIPMAP_LINEAR`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/LoadRenderableFromSfbTask.java"
+            line="747"
+            column="42"
+            startOffset="27978"
+            endLine="747"
+            endColumn="62"
+            endOffset="27998"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Field requires API level 24 (current min is %1$s): `LINEAR_MIPMAP_LINEAR`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/LoadRenderableFromSfbTask.java"
+            line="756"
+            column="41"
+            startOffset="28274"
+            endLine="756"
+            endColumn="54"
+            endOffset="28287"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Field requires API level 24 (current min is %1$s): `CLAMP_TO_EDGE`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/LoadRenderableFromSfbTask.java"
+            line="758"
+            column="41"
+            startOffset="28348"
+            endLine="758"
+            endColumn="47"
+            endOffset="28354"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Field requires API level 24 (current min is %1$s): `REPEAT`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/LoadRenderableFromSfbTask.java"
+            line="760"
+            column="41"
+            startOffset="28424"
+            endLine="760"
+            endColumn="56"
+            endOffset="28439"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Field requires API level 24 (current min is %1$s): `MIRRORED_REPEAT`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="ObsoleteSdkInt"
+        severity="warning"
+        message="Unnecessary; SDK_INT is always >= 24">
+        <fix-replace
+            description="Delete @RequiresApi"
+            replacement="">
+            <range
+                file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/Material.java"
+                startOffset="837"
+                endOffset="878"/>
+        </fix-replace>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/Material.java"
+            line="27"
+            column="1"
+            startOffset="837"
+            endLine="27"
+            endColumn="42"
+            endOffset="878"/>
+        <map>
+            <condition minGE="24"/>
+        </map>
+    </incident>
+
+    <incident
+        id="ObsoleteSdkInt"
+        severity="warning"
+        message="Unnecessary; SDK_INT is always >= 24">
+        <fix-replace
+            description="Delete @RequiresApi"
+            replacement="">
+            <range
+                file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/MaterialFactory.java"
+                startOffset="256"
+                endOffset="297"/>
+        </fix-replace>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/MaterialFactory.java"
+            line="10"
+            column="1"
+            startOffset="256"
+            endLine="10"
+            endColumn="42"
+            endOffset="297"/>
+        <map>
+            <condition minGE="24"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/MaterialParameters.java"
+            line="609"
+            column="21"
+            startOffset="16401"
+            endLine="609"
+            endColumn="33"
+            endOffset="16413"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `getMinFilter`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/MaterialParameters.java"
+            line="610"
+            column="12"
+            startOffset="16430"
+            endLine="610"
+            endColumn="19"
+            endOffset="16437"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Field requires API level 24 (current min is %1$s): `NEAREST`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/MaterialParameters.java"
+            line="613"
+            column="12"
+            startOffset="16566"
+            endLine="613"
+            endColumn="18"
+            endOffset="16572"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Field requires API level 24 (current min is %1$s): `LINEAR`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/MaterialParameters.java"
+            line="616"
+            column="12"
+            startOffset="16700"
+            endLine="616"
+            endColumn="34"
+            endOffset="16722"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Field requires API level 24 (current min is %1$s): `NEAREST_MIPMAP_NEAREST`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/MaterialParameters.java"
+            line="620"
+            column="12"
+            startOffset="16879"
+            endLine="620"
+            endColumn="33"
+            endOffset="16900"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Field requires API level 24 (current min is %1$s): `LINEAR_MIPMAP_NEAREST`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/MaterialParameters.java"
+            line="624"
+            column="12"
+            startOffset="17056"
+            endLine="624"
+            endColumn="33"
+            endOffset="17077"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Field requires API level 24 (current min is %1$s): `NEAREST_MIPMAP_LINEAR`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/MaterialParameters.java"
+            line="628"
+            column="12"
+            startOffset="17233"
+            endLine="628"
+            endColumn="32"
+            endOffset="17253"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Field requires API level 24 (current min is %1$s): `LINEAR_MIPMAP_LINEAR`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/MaterialParameters.java"
+            line="636"
+            column="21"
+            startOffset="17504"
+            endLine="636"
+            endColumn="33"
+            endOffset="17516"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `getMagFilter`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/MaterialParameters.java"
+            line="637"
+            column="12"
+            startOffset="17533"
+            endLine="637"
+            endColumn="19"
+            endOffset="17540"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Field requires API level 24 (current min is %1$s): `NEAREST`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/MaterialParameters.java"
+            line="640"
+            column="12"
+            startOffset="17669"
+            endLine="640"
+            endColumn="18"
+            endOffset="17675"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Field requires API level 24 (current min is %1$s): `LINEAR`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/MaterialParameters.java"
+            line="647"
+            column="59"
+            startOffset="17937"
+            endLine="647"
+            endColumn="71"
+            endOffset="17949"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `getWrapModeS`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/MaterialParameters.java"
+            line="648"
+            column="59"
+            startOffset="18013"
+            endLine="648"
+            endColumn="71"
+            endOffset="18025"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `getWrapModeT`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/MaterialParameters.java"
+            line="649"
+            column="59"
+            startOffset="18089"
+            endLine="649"
+            endColumn="71"
+            endOffset="18101"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `getWrapModeR`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/MaterialParameters.java"
+            line="657"
+            column="12"
+            startOffset="18306"
+            endLine="657"
+            endColumn="25"
+            endOffset="18319"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Field requires API level 24 (current min is %1$s): `CLAMP_TO_EDGE`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/MaterialParameters.java"
+            line="659"
+            column="12"
+            startOffset="18414"
+            endLine="659"
+            endColumn="18"
+            endOffset="18420"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Field requires API level 24 (current min is %1$s): `REPEAT`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/MaterialParameters.java"
+            line="661"
+            column="12"
+            startOffset="18508"
+            endLine="661"
+            endColumn="27"
+            endOffset="18523"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Field requires API level 24 (current min is %1$s): `MIRRORED_REPEAT`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/MaterialParameters.java"
+            line="541"
+            column="25"
+            startOffset="13950"
+            endLine="541"
+            endColumn="43"
+            endOffset="13968"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `getFilamentTexture`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/MaterialParameters.java"
+            line="541"
+            column="77"
+            startOffset="14002"
+            endLine="541"
+            endColumn="87"
+            endOffset="14012"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `getSampler`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="ObsoleteSdkInt"
+        severity="warning"
+        message="Unnecessary; SDK_INT is always >= 24">
+        <fix-replace
+            description="Delete @RequiresApi"
+            replacement="">
+            <range
+                file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/ModelRenderable.java"
+                startOffset="548"
+                endOffset="589"/>
+        </fix-replace>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/ModelRenderable.java"
+            line="20"
+            column="1"
+            startOffset="548"
+            endLine="20"
+            endColumn="42"
+            endOffset="589"/>
+        <map>
+            <condition minGE="24"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/PlaneFactory.java"
+            line="75"
+            column="69"
+            startOffset="3176"
+            endLine="75"
+            endColumn="76"
+            endOffset="3183"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `builder`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/PlaneRenderer.java"
+            line="209"
+            column="27"
+            startOffset="7276"
+            endLine="209"
+            endColumn="36"
+            endOffset="7285"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `setFloat3`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/PlaneRenderer.java"
+            line="210"
+            column="27"
+            startOffset="7357"
+            endLine="210"
+            endColumn="35"
+            endOffset="7365"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `setFloat`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/PlaneRenderer.java"
+            line="309"
+            column="18"
+            startOffset="11052"
+            endLine="309"
+            endColumn="25"
+            endOffset="11059"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `builder`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/PlaneRenderer.java"
+            line="310"
+            column="18"
+            startOffset="11079"
+            endLine="310"
+            endColumn="27"
+            endOffset="11088"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `setSource`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/PlaneRenderer.java"
+            line="314"
+            column="18"
+            startOffset="11326"
+            endLine="314"
+            endColumn="23"
+            endOffset="11331"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `build`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/PlaneRenderer.java"
+            line="332"
+            column="33"
+            startOffset="12096"
+            endLine="332"
+            endColumn="40"
+            endOffset="12103"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `builder`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/PlaneRenderer.java"
+            line="333"
+            column="26"
+            startOffset="12131"
+            endLine="333"
+            endColumn="41"
+            endOffset="12146"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `setMinMagFilter`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/PlaneRenderer.java"
+            line="333"
+            column="68"
+            startOffset="12173"
+            endLine="333"
+            endColumn="74"
+            endOffset="12179"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Field requires API level 24 (current min is %1$s): `LINEAR`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/PlaneRenderer.java"
+            line="334"
+            column="26"
+            startOffset="12206"
+            endLine="334"
+            endColumn="37"
+            endOffset="12217"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `setWrapMode`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/PlaneRenderer.java"
+            line="334"
+            column="63"
+            startOffset="12243"
+            endLine="334"
+            endColumn="69"
+            endOffset="12249"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Field requires API level 24 (current min is %1$s): `REPEAT`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/PlaneRenderer.java"
+            line="335"
+            column="26"
+            startOffset="12276"
+            endLine="335"
+            endColumn="31"
+            endOffset="12281"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `build`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/PlaneRenderer.java"
+            line="338"
+            column="25"
+            startOffset="12361"
+            endLine="338"
+            endColumn="32"
+            endOffset="12368"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `builder`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/PlaneRenderer.java"
+            line="339"
+            column="26"
+            startOffset="12396"
+            endLine="339"
+            endColumn="35"
+            endOffset="12405"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `setSource`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/PlaneRenderer.java"
+            line="343"
+            column="26"
+            startOffset="12659"
+            endLine="343"
+            endColumn="36"
+            endOffset="12669"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `setSampler`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/PlaneRenderer.java"
+            line="344"
+            column="26"
+            startOffset="12704"
+            endLine="344"
+            endColumn="31"
+            endOffset="12709"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `build`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/PlaneRenderer.java"
+            line="347"
+            column="26"
+            startOffset="12769"
+            endLine="347"
+            endColumn="33"
+            endOffset="12776"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `builder`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/PlaneRenderer.java"
+            line="348"
+            column="26"
+            startOffset="12804"
+            endLine="348"
+            endColumn="35"
+            endOffset="12813"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `setSource`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/PlaneRenderer.java"
+            line="352"
+            column="26"
+            startOffset="13076"
+            endLine="352"
+            endColumn="31"
+            endOffset="13081"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `build`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/PlaneRenderer.java"
+            line="356"
+            column="46"
+            startOffset="13271"
+            endLine="356"
+            endColumn="56"
+            endOffset="13281"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `setTexture`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/PlaneRenderer.java"
+            line="357"
+            column="46"
+            startOffset="13355"
+            endLine="357"
+            endColumn="55"
+            endOffset="13364"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `setFloat3`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/PlaneRenderer.java"
+            line="365"
+            column="46"
+            startOffset="13928"
+            endLine="365"
+            endColumn="55"
+            endOffset="13937"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `setFloat2`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/PlaneVisualizer.java"
+            line="156"
+            column="43"
+            startOffset="4308"
+            endLine="156"
+            endColumn="50"
+            endOffset="4315"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `builder`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/Renderable.java"
+            line="94"
+            column="48"
+            startOffset="3862"
+            endLine="94"
+            endColumn="56"
+            endOffset="3870"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `makeCopy`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/RenderableInstance.java"
+            line="195"
+            column="37"
+            startOffset="8314"
+            endLine="195"
+            endColumn="49"
+            endOffset="8326"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `Material`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/RenderableInstance.java"
+            line="196"
+            column="26"
+            startOffset="8367"
+            endLine="196"
+            endColumn="52"
+            endOffset="8393"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `updateGltfMaterialInstance`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/RenderableInstance.java"
+            line="456"
+            column="30"
+            startOffset="18627"
+            endLine="456"
+            endColumn="57"
+            endOffset="18654"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `getFilamentMaterialInstance`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="24"/>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/RenderableInternalData.java"
+            line="269"
+            column="50"
+            startOffset="8101"
+            endLine="269"
+            endColumn="77"
+            endOffset="8128"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="24"/>
+            <entry
+                name="requiresApi"
+                int="24"/>
+            <entry
+                name="message"
+                string="Call requires API level 24 (current min is %1$s): `getFilamentMaterialInstance`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="ObsoleteSdkInt"
+        severity="warning"
+        message="Unnecessary; SDK_INT is always >= 24">
+        <fix-replace
+            description="Delete @RequiresApi"
+            replacement="">
+            <range
+                file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/Renderer.java"
+                startOffset="2778"
+                endOffset="2819"/>
+        </fix-replace>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/Renderer.java"
+            line="78"
+            column="5"
+            startOffset="2778"
+            endLine="78"
+            endColumn="46"
+            endOffset="2819"/>
+        <map>
+            <condition minGE="24"/>
+        </map>
+    </incident>
+
+    <incident
+        id="ObsoleteSdkInt"
+        severity="warning"
+        message="Unnecessary; SDK_INT is always >= 24">
+        <fix-replace
+            description="Delete @RequiresApi"
+            replacement="">
+            <range
+                file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/ShapeFactory.java"
+                startOffset="632"
+                endOffset="673"/>
+        </fix-replace>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/ShapeFactory.java"
+            line="16"
+            column="1"
+            startOffset="632"
+            endLine="16"
+            endColumn="42"
+            endOffset="673"/>
+        <map>
+            <condition minGE="24"/>
+        </map>
+    </incident>
+
+    <incident
+        id="ObsoleteSdkInt"
+        severity="warning"
+        message="Unnecessary; SDK_INT is always >= 24">
+        <fix-replace
+            description="Delete @RequiresApi"
+            replacement="">
+            <range
+                file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/Texture.java"
+                startOffset="863"
+                endOffset="904"/>
+        </fix-replace>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/Texture.java"
+            line="23"
+            column="1"
+            startOffset="863"
+            endLine="23"
+            endColumn="42"
+            endOffset="904"/>
+        <map>
+            <condition minGE="24"/>
+        </map>
+    </incident>
+
+    <incident
+        id="ObsoleteSdkInt"
+        severity="warning"
+        message="Unnecessary; SDK_INT is always >= 24">
+        <fix-replace
+            description="Delete @RequiresApi"
+            replacement="">
+            <range
+                file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/ViewRenderable.java"
+                startOffset="1407"
+                endOffset="1448"/>
+        </fix-replace>
+        <location
+            file="${:core*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/rendering/ViewRenderable.java"
+            line="38"
+            column="1"
+            startOffset="1407"
+            endLine="38"
+            endColumn="42"
+            endOffset="1448"/>
+        <map>
+            <condition minGE="24"/>
+        </map>
+    </incident>
+
+</incidents>

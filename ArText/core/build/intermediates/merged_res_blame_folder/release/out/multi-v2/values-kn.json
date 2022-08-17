@@ -1,0 +1,48 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.google.ar.sceneform.core-merged_res-8:/values-kn/values-kn.xml",
+            "map": [
+                {
+                    "source": "/Users/james/.gradle/caches/transforms-3/798cdc63610da20f8cea87f88b9ec9f1/transformed/jetified-core-1.31.0/res/values-kn/values.xml",
+                    "from": {
+                        "startLines": "4,5,6,7,8",
+                        "startColumns": "0,0,0,0,0",
+                        "startOffsets": "190,236,289,401,522",
+                        "endColumns": "45,52,111,120,100",
+                        "endOffsets": "235,288,400,521,622"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "55,105,162,278,403",
+                        "endColumns": "49,56,115,124,104",
+                        "endOffsets": "100,157,273,398,503"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "com.google.ar.sceneform.core-mergeReleaseResources-6:/values-kn/values-kn.xml",
+            "map": [
+                {
+                    "source": "/Users/james/.gradle/caches/transforms-3/798cdc63610da20f8cea87f88b9ec9f1/transformed/jetified-core-1.31.0/res/values-kn/values.xml",
+                    "from": {
+                        "startLines": "4,5,6,7,8",
+                        "startColumns": "0,0,0,0,0",
+                        "startOffsets": "190,236,289,401,522",
+                        "endColumns": "45,52,111,120,100",
+                        "endOffsets": "235,288,400,521,622"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "55,105,162,278,403",
+                        "endColumns": "49,56,115,124,104",
+                        "endOffsets": "100,157,273,398,503"
+                    }
+                }
+            ]
+        }
+    ]
+}
