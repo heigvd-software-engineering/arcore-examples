@@ -1,0 +1,102 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.google.ar.sceneform.core-mergeReleaseResources-6:/values/values.xml",
+            "map": [
+                {
+                    "source": "/Users/james/.gradle/caches/transforms-3/798cdc63610da20f8cea87f88b9ec9f1/transformed/jetified-core-1.31.0/res/values/values.xml",
+                    "from": {
+                        "startLines": "4,5,6,7,8",
+                        "startColumns": "0,0,0,0,0",
+                        "startOffsets": "161,208,259,381,503",
+                        "endColumns": "46,50,121,121,83",
+                        "endOffsets": "207,258,380,502,586"
+                    },
+                    "to": {
+                        "startLines": "3,4,5,6,7",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "98,149,204,330,456",
+                        "endColumns": "50,54,125,125,87",
+                        "endOffsets": "144,199,325,451,539"
+                    }
+                },
+                {
+                    "source": "/Users/james/.gradle/caches/transforms-3/65fda09746d927d05d715dfc723a1bac/transformed/lifecycle-runtime-2.4.1/res/values/values.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "42",
+                        "endOffsets": "93"
+                    }
+                },
+                {
+                    "source": "/Users/james/.gradle/caches/transforms-3/e0de30b64ec64ab4747bc02cafd4a9c1/transformed/jetified-filament-android-1.21.1/res/values/values.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "53",
+                        "endOffsets": "104"
+                    },
+                    "to": {
+                        "startLines": "8",
+                        "startColumns": "4",
+                        "startOffsets": "544",
+                        "endColumns": "53",
+                        "endOffsets": "593"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "com.google.ar.sceneform.core-merged_res-8:/values/values.xml",
+            "map": [
+                {
+                    "source": "/Users/james/.gradle/caches/transforms-3/798cdc63610da20f8cea87f88b9ec9f1/transformed/jetified-core-1.31.0/res/values/values.xml",
+                    "from": {
+                        "startLines": "4,5,6,7,8",
+                        "startColumns": "0,0,0,0,0",
+                        "startOffsets": "161,208,259,381,503",
+                        "endColumns": "46,50,121,121,83",
+                        "endOffsets": "207,258,380,502,586"
+                    },
+                    "to": {
+                        "startLines": "3,4,5,6,7",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "98,149,204,330,456",
+                        "endColumns": "50,54,125,125,87",
+                        "endOffsets": "144,199,325,451,539"
+                    }
+                },
+                {
+                    "source": "/Users/james/.gradle/caches/transforms-3/65fda09746d927d05d715dfc723a1bac/transformed/lifecycle-runtime-2.4.1/res/values/values.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "42",
+                        "endOffsets": "93"
+                    }
+                },
+                {
+                    "source": "/Users/james/.gradle/caches/transforms-3/e0de30b64ec64ab4747bc02cafd4a9c1/transformed/jetified-filament-android-1.21.1/res/values/values.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "53",
+                        "endOffsets": "104"
+                    },
+                    "to": {
+                        "startLines": "8",
+                        "startColumns": "4",
+                        "startOffsets": "544",
+                        "endColumns": "53",
+                        "endOffsets": "593"
+                    }
+                }
+            ]
+        }
+    ]
+}

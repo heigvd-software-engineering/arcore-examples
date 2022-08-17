@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "com.google.ar.sceneform.ux-merged_res-20:/menu/example_menu.xml",
+        "source": "com.google.ar.sceneform.ux-core-1.7.0-1:/menu/example_menu.xml"
+    },
+    {
+        "merged": "com.google.ar.sceneform.ux-merged_res-20:/menu/example_menu2.xml",
+        "source": "com.google.ar.sceneform.ux-core-1.7.0-1:/menu/example_menu2.xml"
+    }
+]

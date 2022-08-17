@@ -1,0 +1,50 @@
+[
+    {
+        "merged": "com.google.ar.sceneform.core-merged_res-8:/raw/keep_arcore.xml",
+        "source": "com.google.ar.sceneform.core-jetified-core-1.31.0-2:/raw/keep_arcore.xml"
+    },
+    {
+        "merged": "com.google.ar.sceneform.core-merged_res-8:/raw/sceneform_view_material.filamat",
+        "source": "com.google.ar.sceneform.core-main-9:/raw/sceneform_view_material.filamat"
+    },
+    {
+        "merged": "com.google.ar.sceneform.core-merged_res-8:/raw/ar_environment_material_depth.filamat",
+        "source": "com.google.ar.sceneform.core-main-9:/raw/ar_environment_material_depth.filamat"
+    },
+    {
+        "merged": "com.google.ar.sceneform.core-merged_res-8:/raw/sceneform_opaque_textured_material.filamat",
+        "source": "com.google.ar.sceneform.core-main-9:/raw/sceneform_opaque_textured_material.filamat"
+    },
+    {
+        "merged": "com.google.ar.sceneform.core-merged_res-8:/raw/sceneform_plane_material.filamat",
+        "source": "com.google.ar.sceneform.core-main-9:/raw/sceneform_plane_material.filamat"
+    },
+    {
+        "merged": "com.google.ar.sceneform.core-merged_res-8:/raw/sceneform_camera_material.filamat",
+        "source": "com.google.ar.sceneform.core-main-9:/raw/sceneform_camera_material.filamat"
+    },
+    {
+        "merged": "com.google.ar.sceneform.core-merged_res-8:/raw/ar_environment_material_flat.filamat",
+        "source": "com.google.ar.sceneform.core-main-9:/raw/ar_environment_material_flat.filamat"
+    },
+    {
+        "merged": "com.google.ar.sceneform.core-merged_res-8:/raw/sceneform_opaque_colored_material.filamat",
+        "source": "com.google.ar.sceneform.core-main-9:/raw/sceneform_opaque_colored_material.filamat"
+    },
+    {
+        "merged": "com.google.ar.sceneform.core-merged_res-8:/raw/sceneform_plane_shadow_material.filamat",
+        "source": "com.google.ar.sceneform.core-main-9:/raw/sceneform_plane_shadow_material.filamat"
+    },
+    {
+        "merged": "com.google.ar.sceneform.core-merged_res-8:/raw/sceneform_default_light_probe.sfb",
+        "source": "com.google.ar.sceneform.core-main-9:/raw/sceneform_default_light_probe.sfb"
+    },
+    {
+        "merged": "com.google.ar.sceneform.core-merged_res-8:/raw/sceneform_transparent_textured_material.filamat",
+        "source": "com.google.ar.sceneform.core-main-9:/raw/sceneform_transparent_textured_material.filamat"
+    },
+    {
+        "merged": "com.google.ar.sceneform.core-merged_res-8:/raw/sceneform_transparent_colored_material.filamat",
+        "source": "com.google.ar.sceneform.core-main-9:/raw/sceneform_transparent_colored_material.filamat"
+    }
+]

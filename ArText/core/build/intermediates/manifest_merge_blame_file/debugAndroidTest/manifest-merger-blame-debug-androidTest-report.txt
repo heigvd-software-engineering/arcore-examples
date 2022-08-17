@@ -1,0 +1,62 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.google.ar.sceneform.test" >
+4
+5    <uses-sdk
+5-->/Users/james/Documents/Avalia-HEIG/Projets/sceneform-android/core/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest14536770768164991499.xml:5:5-74
+6        android:minSdkVersion="24"
+6-->/Users/james/Documents/Avalia-HEIG/Projets/sceneform-android/core/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest14536770768164991499.xml:5:15-41
+7        android:targetSdkVersion="31" />
+7-->/Users/james/Documents/Avalia-HEIG/Projets/sceneform-android/core/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest14536770768164991499.xml:5:42-71
+8
+9    <instrumentation
+9-->/Users/james/Documents/Avalia-HEIG/Projets/sceneform-android/core/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest14536770768164991499.xml:11:5-15:78
+10        android:name="android.test.InstrumentationTestRunner"
+10-->/Users/james/Documents/Avalia-HEIG/Projets/sceneform-android/core/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest14536770768164991499.xml:11:22-75
+11        android:functionalTest="false"
+11-->/Users/james/Documents/Avalia-HEIG/Projets/sceneform-android/core/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest14536770768164991499.xml:14:22-52
+12        android:handleProfiling="false"
+12-->/Users/james/Documents/Avalia-HEIG/Projets/sceneform-android/core/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest14536770768164991499.xml:13:22-53
+13        android:label="Tests for com.google.ar.sceneform.test"
+13-->/Users/james/Documents/Avalia-HEIG/Projets/sceneform-android/core/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest14536770768164991499.xml:15:22-76
+14        android:targetPackage="com.google.ar.sceneform.test" />
+14-->/Users/james/Documents/Avalia-HEIG/Projets/sceneform-android/core/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest14536770768164991499.xml:12:22-74
+15
+16    <queries>
+16-->[com.google.ar:core:1.31.0] /Users/james/.gradle/caches/transforms-3/798cdc63610da20f8cea87f88b9ec9f1/transformed/jetified-core-1.31.0/AndroidManifest.xml:29:5-31:15
+17        <package android:name="com.google.ar.core" />
+17-->[com.google.ar:core:1.31.0] /Users/james/.gradle/caches/transforms-3/798cdc63610da20f8cea87f88b9ec9f1/transformed/jetified-core-1.31.0/AndroidManifest.xml:30:9-54
+17-->[com.google.ar:core:1.31.0] /Users/james/.gradle/caches/transforms-3/798cdc63610da20f8cea87f88b9ec9f1/transformed/jetified-core-1.31.0/AndroidManifest.xml:30:18-51
+18    </queries>
+19
+20    <application
+20-->/Users/james/Documents/Avalia-HEIG/Projets/sceneform-android/core/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest14536770768164991499.xml:7:5-9:19
+21        android:debuggable="true"
+22        android:extractNativeLibs="false" >
+23        <uses-library android:name="android.test.runner" />
+23-->/Users/james/Documents/Avalia-HEIG/Projets/sceneform-android/core/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest14536770768164991499.xml:8:9-60
+23-->/Users/james/Documents/Avalia-HEIG/Projets/sceneform-android/core/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest14536770768164991499.xml:8:23-57
+24        <!-- The minimal version code of ARCore APK required for an app using this SDK. -->
+25        <meta-data
+25-->[com.google.ar:core:1.31.0] /Users/james/.gradle/caches/transforms-3/798cdc63610da20f8cea87f88b9ec9f1/transformed/jetified-core-1.31.0/AndroidManifest.xml:36:9-38:41
+26            android:name="com.google.ar.core.min_apk_version"
+26-->[com.google.ar:core:1.31.0] /Users/james/.gradle/caches/transforms-3/798cdc63610da20f8cea87f88b9ec9f1/transformed/jetified-core-1.31.0/AndroidManifest.xml:37:13-62
+27            android:value="220920000" /> <!-- This activity is critical for installing ARCore when it is not already present. -->
+27-->[com.google.ar:core:1.31.0] /Users/james/.gradle/caches/transforms-3/798cdc63610da20f8cea87f88b9ec9f1/transformed/jetified-core-1.31.0/AndroidManifest.xml:38:13-38
+28        <activity
+28-->[com.google.ar:core:1.31.0] /Users/james/.gradle/caches/transforms-3/798cdc63610da20f8cea87f88b9ec9f1/transformed/jetified-core-1.31.0/AndroidManifest.xml:40:9-46:80
+29            android:name="com.google.ar.core.InstallActivity"
+29-->[com.google.ar:core:1.31.0] /Users/james/.gradle/caches/transforms-3/798cdc63610da20f8cea87f88b9ec9f1/transformed/jetified-core-1.31.0/AndroidManifest.xml:41:13-62
+30            android:configChanges="keyboardHidden|orientation|screenSize"
+30-->[com.google.ar:core:1.31.0] /Users/james/.gradle/caches/transforms-3/798cdc63610da20f8cea87f88b9ec9f1/transformed/jetified-core-1.31.0/AndroidManifest.xml:42:13-74
+31            android:excludeFromRecents="true"
+31-->[com.google.ar:core:1.31.0] /Users/james/.gradle/caches/transforms-3/798cdc63610da20f8cea87f88b9ec9f1/transformed/jetified-core-1.31.0/AndroidManifest.xml:43:13-46
+32            android:exported="false"
+32-->[com.google.ar:core:1.31.0] /Users/james/.gradle/caches/transforms-3/798cdc63610da20f8cea87f88b9ec9f1/transformed/jetified-core-1.31.0/AndroidManifest.xml:44:13-37
+33            android:launchMode="singleTop"
+33-->[com.google.ar:core:1.31.0] /Users/james/.gradle/caches/transforms-3/798cdc63610da20f8cea87f88b9ec9f1/transformed/jetified-core-1.31.0/AndroidManifest.xml:45:13-43
+34            android:theme="@android:style/Theme.Material.Light.Dialog.Alert" />
+34-->[com.google.ar:core:1.31.0] /Users/james/.gradle/caches/transforms-3/798cdc63610da20f8cea87f88b9ec9f1/transformed/jetified-core-1.31.0/AndroidManifest.xml:46:13-77
+35    </application>
+36
+37</manifest>

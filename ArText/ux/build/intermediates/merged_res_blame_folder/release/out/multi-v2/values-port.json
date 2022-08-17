@@ -1,0 +1,34 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.google.ar.sceneform.ux-mergeReleaseResources-18:/values-port/values-port.xml",
+            "map": [
+                {
+                    "source": "/Users/james/.gradle/caches/transforms-3/397f4eac15eaf5354aae8f1e0b439305/transformed/appcompat-1.4.1/res/values-port/values-port.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "55",
+                        "endOffsets": "106"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "com.google.ar.sceneform.ux-merged_res-20:/values-port/values-port.xml",
+            "map": [
+                {
+                    "source": "/Users/james/.gradle/caches/transforms-3/397f4eac15eaf5354aae8f1e0b439305/transformed/appcompat-1.4.1/res/values-port/values-port.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "55",
+                        "endOffsets": "106"
+                    }
+                }
+            ]
+        }
+    ]
+}

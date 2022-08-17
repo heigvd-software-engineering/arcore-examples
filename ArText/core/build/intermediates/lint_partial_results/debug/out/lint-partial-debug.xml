@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 7.2.0" type="partial_results">
+    <map id="UnusedResources">
+        <location id="R.raw.sceneform_plane_shadow_material"
+            file="${:core*debug*sourceProvider*0*resDir*0}/raw/sceneform_plane_shadow_material.filamat"/>
+        <location id="R.raw.sceneform_default_light_probe"
+            file="${:core*debug*sourceProvider*0*resDir*0}/raw/sceneform_default_light_probe.sfb"/>
+        <location id="R.raw.sceneform_opaque_colored_material"
+            file="${:core*debug*sourceProvider*0*resDir*0}/raw/sceneform_opaque_colored_material.filamat"/>
+        <location id="R.raw.sceneform_transparent_colored_material"
+            file="${:core*debug*sourceProvider*0*resDir*0}/raw/sceneform_transparent_colored_material.filamat"/>
+        <location id="R.raw.sceneform_camera_material"
+            file="${:core*debug*sourceProvider*0*resDir*0}/raw/sceneform_camera_material.filamat"/>
+        <location id="R.raw.sceneform_view_material"
+            file="${:core*debug*sourceProvider*0*resDir*0}/raw/sceneform_view_material.filamat"/>
+        <location id="R.raw.ar_environment_material_depth"
+            file="${:core*debug*sourceProvider*0*resDir*0}/raw/ar_environment_material_depth.filamat"/>
+        <location id="R.raw.sceneform_opaque_textured_material"
+            file="${:core*debug*sourceProvider*0*resDir*0}/raw/sceneform_opaque_textured_material.filamat"/>
+        <location id="R.drawable.sceneform_plane"
+            file="${:core*debug*sourceProvider*0*resDir*0}/drawable/sceneform_plane.png"/>
+        <entry
+            name="model"
+            string="drawable[sceneform_plane(D)],raw[sceneform_plane_material(D),sceneform_opaque_textured_material(D),sceneform_plane_shadow_material(D),sceneform_transparent_colored_material(D),sceneform_camera_material(D),ar_environment_material_flat(D),sceneform_opaque_colored_material(D),sceneform_default_light_probe(D),sceneform_transparent_textured_material(D),sceneform_view_material(D),ar_environment_material_depth(D)];;;;"/>
+        <location id="R.raw.sceneform_transparent_textured_material"
+            file="${:core*debug*sourceProvider*0*resDir*0}/raw/sceneform_transparent_textured_material.filamat"/>
+        <location id="R.raw.sceneform_plane_material"
+            file="${:core*debug*sourceProvider*0*resDir*0}/raw/sceneform_plane_material.filamat"/>
+        <location id="R.raw.ar_environment_material_flat"
+            file="${:core*debug*sourceProvider*0*resDir*0}/raw/ar_environment_material_flat.filamat"/>
+    </map>
+
+</incidents>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 7.2.0" type="incidents">
+
+    <incident
+        id="ContentDescription"
+        severity="warning"
+        message="Missing `contentDescription` attribute on image">
+        <fix-attribute
+            description="Set contentDescription"
+            namespace="http://schemas.android.com/apk/res/android"
+            attribute="contentDescription"
+            value="TODO"
+            dot="4"
+            mark="0"/>
+        <location
+            file="${:ux*debug*sourceProvider*0*resDir*0}/layout/sceneform_instructions_augmented_image.xml"
+            line="1"
+            column="2"
+            startOffset="1"
+            endLine="1"
+            endColumn="11"
+            endOffset="10"/>
+    </incident>
+
+    <incident
+        id="ObsoleteSdkInt"
+        severity="warning"
+        message="Unnecessary; SDK_INT is never &lt; 24">
+        <fix-data conditional="false"/>
+        <location
+            file="${:ux*debug*sourceProvider*0*javaDir*0}/com/google/ar/sceneform/ux/BaseArFragment.java"
+            line="193"
+            column="13"
+            startOffset="7825"
+            endLine="193"
+            endColumn="52"
+            endOffset="7864"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.annotation:annotation than 1.3.0 is available: 1.4.0">
+        <location
+            file="${:ux*projectDir}/build.gradle"
+            line="45"
+            column="20"
+            startOffset="1314"
+            endLine="45"
+            endColumn="72"
+            endOffset="1366"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.appcompat:appcompat than 1.4.1 is available: 1.4.2">
+        <location
+            file="${:ux*projectDir}/build.gradle"
+            line="46"
+            column="20"
+            startOffset="1386"
+            endLine="46"
+            endColumn="69"
+            endOffset="1435"/>
+    </incident>
+
+    <incident
+        id="IconLocation"
+        severity="warning"
+        message="Found bitmap drawable `res/drawable/sceneform_hand_phone.png` in densityless folder">
+        <location
+            file="${:ux*debug*sourceProvider*0*resDir*0}/drawable/sceneform_hand_phone.png"/>
+    </incident>
+
+</incidents>

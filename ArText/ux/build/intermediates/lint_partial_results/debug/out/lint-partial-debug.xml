@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 7.2.0" type="partial_results">
+    <map id="UnusedResources">
+        <entry
+            name="model"
+            string="drawable[sceneform_hand_phone(U),sceneform_fit_to_scan(U)],id[sceneform_ar_scene_view(U),handMotionLayout(U),handMotionView(D),fitToScanView(D)],layout[sceneform_ux_fragment_layout(U),sceneform_instructions_augmented_image(U),sceneform_instructions_plane_discovery(U)],raw[sceneform_face_mesh_material(U),external_plain_video_material(U),external_chroma_key_video_material(U),sceneform_face_mesh_occluder_material(U),sceneform_footprint(U)],string[sceneform_unavailable_device_not_compatible(U),sceneform_camera_permission_required(U),sceneform_add_camera_permission_via_settings(U),sceneform_unavailable_arcore_not_installed(U),sceneform_failed_to_create_ar_session(U),sceneform_unavailable_sdk_too_old(U),sceneform_unavailable_apk_too_old(U)];7^1,8^0;;;"/>
+    </map>
+
+</incidents>
