@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grpc-map
+  labels:
+    app: grpc-map
+    tier: grpc
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: grpc-map
+  template:
+    metadata:
+      labels:
+        app: grpc-map
+    spec:
+      containers:
+      - name: grpc-map
+        image: registry.gitlab.com/heigvd-software-engineering/grpc-example/grpc-map:latest
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 9090

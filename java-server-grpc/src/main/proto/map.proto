@@ -1,0 +1,32 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "ch.heigvd.java.map";
+option java_outer_classname = "MapGRPC";
+option objc_class_prefix = "MAP";
+package map;
+
+// The MapService service definition.
+service MapService {
+  // ask for the local restaurant around the user
+  rpc getLocalRestaurant(LocalRestaurantRequest) returns (LocalRestaurantReply) {}
+}
+
+// The request message containing the location of the user
+message LocalRestaurantRequest {
+  double latitude = 1;
+  double longitude = 2;
+}
+
+// The response message containing the list of restaurants nearby
+message LocalRestaurantReply {
+  repeated LocalRestaurant localRestaurant = 1;
+}
+
+message LocalRestaurant {
+  string name = 1;
+  string openingHour = 2;
+  double latitude = 3;
+  double longitude = 4;
+  double altitude = 5;
+}

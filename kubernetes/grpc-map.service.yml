@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: grpc-map-svc
+  labels:
+    app: grpc-map
+    tier: grpc
+spec:
+  type: LoadBalancer
+  ports:
+  - protocol: TCP
+    port: 443
+    targetPort: 9090
+  selector:
+    app: grpc-map
